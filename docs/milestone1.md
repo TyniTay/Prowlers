@@ -103,10 +103,10 @@ That said, PROWL should be designed with minimal noise alerts, as many students 
 <h3>Age:</h3>
 
 <p>The expected ages of various PROWL user demographics, based off of internet research, are as follows:</p>
-- Undergraduate students: under 25</p>
-- Law Students: 22 to 24</p>
-- Faculty: 55 on average</p>
-- Parents: likely in 40s or 50s</p>
+<p>- Undergraduate students: under 25</p>
+<p>- Law Students: 22 to 24</p>
+<p>- Faculty: 55 on average</p>
+<p>- Parents: likely in 40s or 50s</p>
   
 <p>Undergraduate and law students are at a relatively young expected age. They will most likely be very familiar with electronic user interface conventions. However, the interface should not be streamlined so much that it alienates parents, faculty, and more mature LMU students. </p>
 	
