@@ -91,6 +91,8 @@ Prowl is an important factor of student life for Loyola Marymount University. Th
 <p>PROWL is the platform for a huge number of important tasks that students and faculty carry out at LMU. Because students and faculty are the core of university culture, all members of the current LMU community could be considered, at least, tertiary stakeholders in PROWL. Two examples of these stakeholders, who never interact with the interface but are influenced by it, would be high-level LMU administrators and staff working in campus maintenance. PROWL impacts the lives and schedules of students and faculty who, in turn, impact the jobs of these administrators and staff. LMU administrators may also have the final say in decisions about the interface.</p>
 </details>
 
+---
+
 ### Further User Analysis
 <details>
 	<summary>Read</summary>
