@@ -10,9 +10,7 @@
 
 <p>Prowl was created in the 90’s and has not been revised or updated since then, except for the change in logo. To sum the site up, it is very outdated.</p>
 
-<p><img src="/images/Prowl1.png"
-     alt="Prowl 1"
-     style="float: left; margin-right: 10px;" /></p>
+
 
 <p>The design of the site does not appeal to the human eye, there is no aesthetic, the navigation bar is rigid, and the text is too small. Considering the center of the retina does not have any blue cones, this makes the category text design weak. The information presentation is very close together, no dividers and mostly all the same color stacked on top of eachother. This can make finding what the user needs difficult. Not to mention, a few of the options are overlapping and can be confusing for which one does what. </p>
 
@@ -20,15 +18,9 @@
 
 <p>Instead of each navigation menu having a sub menu, it displays a bunch of bundled links all in blue and underlined. This makes it hard to distinguish if this is a link taking you out of prowl, or if it is leading to another page within the website. Also, the amount of blue links is overwhelming and there is way too much text. A lot of these categories can be merged into one page with the proper design. </p>
 
-<p><img src="/images/noback.PNG"
-     alt="Prowl 2"
-     style="float: left; margin-right: 10px;" /></p>
 
 <p>Another problem with Prowl is the lack of a back button. Instead of going back one page to where you were previously, you have to return to the menu completely. This can be difficult for users who want to return to the previous page, but due to short-term memory, cannot remember the steps to get there. It feels like a maze that leads to a bunch of deadends. </p>
 
-<p><img src="/images/slecterm.PNG"
-     alt="Prowl 3"
-     style="float: left; margin-right: 10px;" /></p>
 
 <p>Another aspect that is poorly implemented is there are no errors if you press submit after not selecting anything. It simply just refreshes the page, this could confuse people if they did not know there was input needed.</p>
 
@@ -207,7 +199,7 @@ A new PROWL must also be able to integrate into LMU's human interface. PROWL's s
 <p>2.6: Input new information</p>
 <p>2.7: Click submit</p>
 <p>3: Update Emergency Contact information/ LMU Alert Information/ Ethnicity and Race Information</p>
-Similar to update address(es) and Phone(s) except you click on the specific hyperlink to view and or update the information</p>
+<p>Similar to update address(es) and Phone(s) except you click on the specific hyperlink to view and or update the information</p>
 
 <h3>New Prowl Task Analysis: </h3>
 <p>Log Into Prowl</p>
@@ -237,25 +229,19 @@ Similar to update address(es) and Phone(s) except you click on the specific hype
 ### Existing Solutions
 
 <details>
-	<summary>Read</summary><p>
-
+	<summary>Read</summary>
 <h3>Solution Examples</h3>
 	
 <p>Existing solutions can be seen in similar portals for schools and other organizations that utilize less text-heavy layouts and, instead, focus on accessibility.</p>
 
 <p>Below is an example with large, easy to understand sections for each link and tabs on the left so they are seen first.</p>
 
-<p><img src="/images/exampleprowl"
-     alt="Example"
-     style="float: left; margin-right: 10px;" /></p>
+
 
 <p>While the page below presents a lot of information, the layout and color design does a good job of not overwhelming the user.</p>
 
-<p><img src="/images/exampleprowl2"
-     alt="Example2"
-     style="float: left; margin-right: 10px;" /></p>
 
-</p>
+
 </details>
 
 ---
