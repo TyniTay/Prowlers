@@ -3,7 +3,7 @@
 LMU Prowl was created in the 90's, since then it has not been updated. Yes, the site is 30 years outdated and we want to fix that!
 
 
-### [Milestone1](/milestone1/)   
+### [MILESTONE 1](milestone1.md)
 
 
 ```markdown
