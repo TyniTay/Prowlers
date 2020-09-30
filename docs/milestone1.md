@@ -3,11 +3,11 @@
 ### The Problem with PROWL
 <details>
 	<summary>Read</summary>
-<p>
 	
-#### Design & Functionality
+<h3> Design & Functionality </h3>
+<p>
 Prowl is an important factor of student life for Loyola Marymount University. This is what makes the layout and functionality of the site significant. 
-
+</p>		
 Prowl was created in the 90’s and has not been revised or updated since then, except for the change in logo. To sum the site up, it is very outdated. 
 
 ![Photo1](/images/Prowl1.png)
