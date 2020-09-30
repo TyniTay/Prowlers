@@ -6,15 +6,21 @@ Prowl is an important factor of student life for Loyola Marymount University. Th
 
 Prowl was created in the 90’s and has not been revised or updated since then, except for the change in logo. To sum the site up, it is very outdated. 
 
-The design of the site does not appeal to the human eye, there is no aesthetic, the navigation bar is rigid, and the text is too small. Considering the center of the retina does not have any blue cones, this makes the category text design weak. The information presentation is very close together, no dividers and mostly all the same color stacked on top of eachother. This can make finding what the user needs difficult. Not to mention, a few of the options are overlapping and can be confusing for which one does what. 
+![Photo1](/images/Prowl1.png)
 
-Another problem with Prowl is the lack of a back button. Instead of going back one page to where you were previously, you have to return to the menu completely. This can be difficult for users who want to return to the previous page, but due to short-term memory, cannot remember the steps to get there. It feels like a maze that leads to a bunch of deadends. 
+The design of the site does not appeal to the human eye, there is no aesthetic, the navigation bar is rigid, and the text is too small. Considering the center of the retina does not have any blue cones, this makes the category text design weak. The information presentation is very close together, no dividers and mostly all the same color stacked on top of eachother. This can make finding what the user needs difficult. Not to mention, a few of the options are overlapping and can be confusing for which one does what. 
 
 The site’s menu is also located poorly for our peripheral vision as it is on the center right in blue with no background or button, when all of the navigation tabs are on the center left.
 
-Another aspect that is poorly implemented is there are no errors if you press submit after not selecting anything. It simply just refreshes the page, this could confuse people if they did not know there was input needed.
-
 Instead of each navigation menu having a sub menu, it displays a bunch of bundled links all in blue and underlined. This makes it hard to distinguish if this is a link taking you out of prowl, or if it is leading to another page within the website. Also, the amount of blue links is overwhelming and there is way too much text. A lot of these categories can be merged into one page with the proper design. 
+
+![Photo2](/images/noback.PNG)
+
+Another problem with Prowl is the lack of a back button. Instead of going back one page to where you were previously, you have to return to the menu completely. This can be difficult for users who want to return to the previous page, but due to short-term memory, cannot remember the steps to get there. It feels like a maze that leads to a bunch of deadends. 
+
+![Photo3](/images/slectterm.PNG)
+
+Another aspect that is poorly implemented is there are no errors if you press submit after not selecting anything. It simply just refreshes the page, this could confuse people if they did not know there was input needed.
 
 The site also sends you an email to reset your password every few months, this can be a nuisance as you cannot reuse any of the passwords you have used in the past. This is problematic as users will constantly forget their password or not remember which password is the new password, causing frustration.
 
