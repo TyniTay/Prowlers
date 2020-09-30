@@ -79,10 +79,10 @@ That said, PROWL should be designed with minimal noise alerts, as many students 
 #### Age
 
 The expected ages of various PROWL user demographics, based off of internet research, are as follows:
--Undergraduate students: under 25
--Law Students: 22 to 24
--Faculty: 55 on average
--Parents:  likely in 40s or 50s
+- Undergraduate students: under 25
+- Law Students: 22 to 24
+- Faculty: 55 on average
+- Parents: likely in 40s or 50s
   
 Undergraduate and law students are at a relatively young expected age. They will most likely be very familiar with electronic user interface conventions. However, the interface should not be streamlined so much that it alienates parents, faculty, and more mature LMU students. 
 Further User Analysis: Economic Standing:
@@ -185,15 +185,18 @@ Log Into Prowl
 
 ### Criteria for Success
 
-No loss of functionality
-Better user experience
-Increased user satisfaction
-Increased accessibility for neurodiverse populations
-Optimization for mobile use
+1. No loss of functionality
+2. Better user experience
+3. Increased user satisfaction
+4. Increased accessibility for neurodiverse populations
+5. Optimization for mobile use
 
 ### Implications for Future Design
 
+![Example1](/images/exampleprowl2.png)
 A new design for PROWL should not only be easier to use and simpler to navigate, but familiar alongside myLMU. With the large number of returning students and faculty who are already accustomed to myLMU, it is reasonable to create PROWL 2.0 with myLMU in mind. Using myLMU as a reference, we should design a new web page with less confusing tabs and mobile compatibility. Our research and analysis of Prowl has shown us the important role design plays in a user’s experience.
+
+![Example2](/images/exampleprowl.png)
 
 
 ### Works Cited
