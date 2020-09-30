@@ -1,12 +1,8 @@
 ## MILESTONE 1
 
 <details>
-	<summary>Test Drop</summary>
-	<p>Yum</p>
-</details>
-
-### PROWL Design & Functionality Issues
-
+<summary>### PROWL Design & Functionality Issues</summary>
+<p>
 Prowl is an important factor of student life for Loyola Marymount University. This is what makes the layout and functionality of the site significant. 
 
 Prowl was created in the 90’s and has not been revised or updated since then, except for the change in logo. To sum the site up, it is very outdated. 
@@ -28,6 +24,8 @@ Another problem with Prowl is the lack of a back button. Instead of going back o
 Another aspect that is poorly implemented is there are no errors if you press submit after not selecting anything. It simply just refreshes the page, this could confuse people if they did not know there was input needed.
 
 The site also sends you an email to reset your password every few months, this can be a nuisance as you cannot reuse any of the passwords you have used in the past. This is problematic as users will constantly forget their password or not remember which password is the new password, causing frustration.
+</p>
+</details>
 
 ### Importance of The Problem
 
