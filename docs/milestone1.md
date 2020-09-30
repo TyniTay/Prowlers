@@ -138,6 +138,7 @@ A new PROWL must also be able to integrate into LMU's human interface. PROWL's s
 ---
 
 ### Task Analysis
+
 <details>
 	<summary>Read</summary>
 
@@ -287,7 +288,7 @@ A new PROWL must also be able to integrate into LMU's human interface. PROWL's s
 Loyola Marymount University - PROWL. (n.d.). Retrieved September 28, 2020, from
 https://banner-web.lmu.edu:8080/pls/pbanr/twbkwbis.P_GenMenu?name=bmenu.P_MainMnu
 
-Paschalidis Kostja, “The application of cognitive psychology to User-Interface Design. 2011”.  UX Collective, 5/7/2018,           https://uxdesign.cc/the-application-of-cogntive-psychology-to-user-interface-design-81599ad7fb55
+Paschalidis Kostja, “The application of cognitive psychology to User-Interface Design. 2011”.  UX Collective, 5/7/2018,https://uxdesign.cc/the-application-of-cogntive-psychology-to-user-interface-design-81599ad7fb55
 
 Photos: 45 Education Web UI Design Examples, 2020,    bashooka.com/inspiration/45-education-web-ui-design-examples/.
 Tullis, J. G. , Finley, J. R., & Benjamin, A. S. (2014). Metacognition of the testing effect: Guiding learners to predict the benefits of retrieval. Memory & Cognition . [PDF]
