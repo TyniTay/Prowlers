@@ -36,26 +36,24 @@ The site also sends you an email to reset your password every few months, this c
 
 <details>
 	<summary>Read</summary>
-<p>All students and faculty use PROWL for a variety of reasons. The primary use is registration.
-95% of students and faculty surveyed stated that they were not satisfied with PROWL’s current state.
-PROWL is a very text-heavy, unintuitive design that not only is difficult to navigate, but also does little to cater to neurodiverse populations.
-PROWL is currently not optimized at all for mobile users. There is no support or format changes when viewing the website on a phone.
-PROWL User Reviews
-	Students and professors we surveyed were asked why they are dissatisfied: 
+<p>
 
-“Feels like I'm stuck in 2005, very text heavy, I just hate looking at it. Definitely needs an update or 2 to allow users to better navigate their excessive menus”
-“I don't understand how the categories are organized and navigating the interface is very unintuitive.”
-“Navigation through Banner is incredibly difficult, cannot open multiple tabs in Banner, it's always one tab and gets overwritten, searching through classes is difficult and not user friendly, neither is looking at the details of the courses.”
-“This tool is just terrible. From the very moment you log in, it is difficult to find what you need to do the work for which you accessed it”
-Existing Solutions
-Existing solutions can be seen in similar portals for schools and other organizations that utilize less text-heavy layouts and, instead, focus on accessibility.
+- All students and faculty use PROWL for a variety of reasons. The primary use is registration.
+- 95% of students and faculty surveyed stated that they were not satisfied with PROWL’s current state.
+- PROWL is a very text-heavy, unintuitive design that not only is difficult to navigate, but also does little to cater to neurodiverse populations.
+- PROWL is currently not optimized at all for mobile users. There is no support or format changes when viewing the website on a phone. </p></details>
 
-Below is an example with large, easy to understand sections for each link and tabs on the left so they are seen first.
+### PROWL User Reviews
+<details>
+	<summary>Read</summary><p>
+	
+## Students and professors we surveyed were asked why they are dissatisfied: 
 
-IMAGE
-
-While the page below presents a lot of information, the layout and color design does a good job of not overwhelming the user.</p>
-</details>
+- “Feels like I'm stuck in 2005, very text heavy, I just hate looking at it. Definitely needs an update or 2 to allow users to better navigate their excessive menus”
+- “I don't understand how the categories are organized and navigating the interface is very unintuitive.”
+- “Navigation through Banner is incredibly difficult, cannot open multiple tabs in Banner, it's always one tab and gets overwritten, searching through classes is difficult and not user friendly, neither is looking at the details of the courses.”
+- “This tool is just terrible. From the very moment you log in, it is difficult to find what you need to do the work for which you accessed it”
+</p></details>
 
 ---
 
@@ -120,6 +118,8 @@ It may streamline PROWL to hide or remove the financial aid and scholarship sect
 
 <details>
 	<summary>Read</summary><p>
+	
+#### Issues/Constraints
 
 The biggest constraint impacting the design of a new PROWL interface is the larger LMU interface within which PROWL exists. PROWL is accessed through the My LMU homepage and serves as a portal to numerous other pages in LMU's system. Many of the features on any given number of these pages may be more convenient to users as a part of PROWL. However, it is beyond the scope of this project to change the other pages. Having these features in multiple locations may create more confusion than is worth including them in PROWL. 
 A new PROWL must also be able to integrate into LMU's human interface. PROWL's services should be available to users all-year-round, meaning the opportunity to retrain users on a new system is very slim. Even if the new system is intuitive, some confusion will inevitably arise when it replaces the old one. Therefore, the new system should maintain enough of the old system's architecture to remain as familiar as possible, without sacrificing design. </p></details>
@@ -215,8 +215,38 @@ Log Into Prowl
 4.1: Locate personal profile section
 4.2: View university Id and all other information
 4.2.1 Update by locating and clicking on the info you want to change
+</p></details>
+
+---
+
+### Existing Solutions
+
+<details>
+	<summary>Read</summary><p>
+
+### Solution Examples
+	
+Existing solutions can be seen in similar portals for schools and other organizations that utilize less text-heavy layouts and, instead, focus on accessibility.
+
+Below is an example with large, easy to understand sections for each link and tabs on the left so they are seen first.
+
+![Example1](/images/exampleprowl)
+
+While the page below presents a lot of information, the layout and color design does a good job of not overwhelming the user.
+
+![Example2](/images/exampleprowl2)
+
+</p>
+</details>
+
+---
 
 ### Criteria for Success
+
+<details>
+	<summary>Read</summary>
+
+#### Our goals:
 
 1. No loss of functionality
 2. Better user experience
@@ -224,12 +254,17 @@ Log Into Prowl
 4. Increased accessibility for neurodiverse populations
 5. Optimization for mobile use
 
+</p></details>
+
+---
+
+<details>
+	<summary>Read</summary><p>
+
 ### Implications for Future Design
 
-![Example1](/images/exampleprowl2.png)
 A new design for PROWL should not only be easier to use and simpler to navigate, but familiar alongside myLMU. With the large number of returning students and faculty who are already accustomed to myLMU, it is reasonable to create PROWL 2.0 with myLMU in mind. Using myLMU as a reference, we should design a new web page with less confusing tabs and mobile compatibility. Our research and analysis of Prowl has shown us the important role design plays in a user’s experience.
 
-![Example2](/images/exampleprowl.png)
 </p></details>
 
 ---
