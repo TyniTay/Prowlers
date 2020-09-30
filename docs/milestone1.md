@@ -295,4 +295,3 @@ Tullis, J. G. , & Benjamin, A. S. (2011). On the effectiveness of self-paced lea
 
 “USA, Academic Career Structure.” European University Institute, 28 Aug. 2018, www.eui.eu/ProgrammesAndFellowships/AcademicCareersObservatory/AcademicCareersbyCountry/USA. 
 Yang, Gregory. “How Age Affects Your Law School Application.” Tipping The Scales, 4 Apr. 2019, tippingthescales.com/2019/04/how-age-affects-your-law-school-application/.
-
