@@ -1,9 +1,9 @@
 ## MILESTONE 1
 
 <details>
-	<summary><bold>PROWL Design & Functionality Issues</bold></summary>
+	<summary>__PROWL Design & Functionality Issues__</summary>
 <p>
-Prowl is an important factor of student life for Loyola Marymount University. This is what makes the layout and functionality of the site significant. 
+Prowl is an important **factor** of student life for Loyola Marymount University. This is what makes the layout and functionality of the site significant. 
 
 Prowl was created in the 90’s and has not been revised or updated since then, except for the change in logo. To sum the site up, it is very outdated. 
 
