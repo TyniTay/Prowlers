@@ -5,9 +5,8 @@
 	<summary>Read</summary>
 	
 <h3> Design & Functionality </h3>
-<p>
-Prowl is an important factor of student life for Loyola Marymount University. This is what makes the layout and functionality of the site significant. 
-</p>	
+
+<p>Prowl is an important factor of student life for Loyola Marymount University. This is what makes the layout and functionality of the site significant. </p>	
 
 <p>Prowl was created in the 90’s and has not been revised or updated since then, except for the change in logo. To sum the site up, it is very outdated.</p>
 
@@ -45,9 +44,9 @@ Prowl is an important factor of student life for Loyola Marymount University. Th
 	<summary>Read</summary>
 
 
-<p>- All students and faculty use PROWL for a variety of reasons. The primary use is registration.
-<p>- 95% of students and faculty surveyed stated that they were not satisfied with PROWL’s current state.
-<p>- PROWL is a very text-heavy, unintuitive design that not only is difficult to navigate, but also does little to cater to neurodiverse populations.
+<p>- All students and faculty use PROWL for a variety of reasons. The primary use is registration.</p>
+<p>- 95% of students and faculty surveyed stated that they were not satisfied with PROWL’s current state.</p>
+<p>- PROWL is a very text-heavy, unintuitive design that not only is difficult to navigate, but also does little to cater to neurodiverse populations.</p>
 <p>- PROWL is currently not optimized at all for mobile users. There is no support or format changes when viewing the website on a phone. </p>
 
 </details>
@@ -56,7 +55,7 @@ Prowl is an important factor of student life for Loyola Marymount University. Th
 
 ### PROWL User Reviews
 <details>
-	<summary>Read</summary><p>
+	<summary>Read</summary>
 	
 <h3>Students and professors we surveyed were asked why they are dissatisfied: </h3>
 
