@@ -1,6 +1,7 @@
 ## MILESTONE 1
 
 ### The Problem with PROWL
+
 <details>
 	<summary>Read</summary>
 	
@@ -85,23 +86,24 @@
 ---
 
 ### Further User Analysis
+
 <details>
 	<summary>Read</summary>
 	
-<h3>Platform:</h3>
+<h3>Platform</h3>
 	
 <p>PROWL is accessible through any standard web browser to any user with the proper verification. This means that users will be accessing the page through personal mobile devices, personal computers, and the computers provided by LMU in public spaces. It should be noted here that PROWL is currently not formatted to function on a mobile web browser--a clear problem with the interface that should be addressed. </p>
 
-<p>*Please note that the above also applies to the "task environment."</p>
+<p>Please note that the above also applies to the "task environment."</p>
  
-<h3>Location:</h3>
+<h3>Location</h3>
 	
 <p>LMU has a main physical campus. However, because of PROWL's browser accessibility, the interface should not be designed with the only campus in mind. As we are seeing play out today, a large variety of circumstances can necessitate that students be able to use PROWL effectively from anywhere in the world. 
 That said, PROWL should be designed with minimal noise alerts, as many students will be accessing it through university computers in designated quiet spaces.</p>
 
-<p>*Please note that the above also applies to the "task environment." </p>
+<p>Please note that the above also applies to the "task environment." </p>
 	
-<h3>Age:</h3>
+<h3>Age</h3>
 
 <p>The expected ages of various PROWL user demographics, based off of internet research, are as follows:</p>
 <p>- Undergraduate students: under 25</p>
@@ -111,7 +113,7 @@ That said, PROWL should be designed with minimal noise alerts, as many students 
   
 <p>Undergraduate and law students are at a relatively young expected age. They will most likely be very familiar with electronic user interface conventions. However, the interface should not be streamlined so much that it alienates parents, faculty, and more mature LMU students. </p>
 	
-<h3>Economic Standing:</h3>
+<h3>Economic Standing</h3>
 	
 <p>LMU is a private school, so it is safe to assume that many users of PROWL will be from an affluent background. Affluence will not impact the users' access to PROWL in any way.</p>
 	
@@ -125,12 +127,13 @@ That said, PROWL should be designed with minimal noise alerts, as many students 
 ### Issues and Constraints 
 
 <details>
-	<summary>Read</summary><p>
+	<summary>Read</summary>
 	
 <h3>Issues/Constraints</h3>
 
 <p> The biggest constraint impacting the design of a new PROWL interface is the larger LMU interface within which PROWL exists. PROWL is accessed through the My LMU homepage and serves as a portal to numerous other pages in LMU's system. Many of the features on any given number of these pages may be more convenient to users as a part of PROWL. However, it is beyond the scope of this project to change the other pages. Having these features in multiple locations may create more confusion than is worth including them in PROWL. 
-A new PROWL must also be able to integrate into LMU's human interface. PROWL's services should be available to users all-year-round, meaning the opportunity to retrain users on a new system is very slim. Even if the new system is intuitive, some confusion will inevitably arise when it replaces the old one. Therefore, the new system should maintain enough of the old system's architecture to remain as familiar as possible, without sacrificing design. </p></details>
+A new PROWL must also be able to integrate into LMU's human interface. PROWL's services should be available to users all-year-round, meaning the opportunity to retrain users on a new system is very slim. Even if the new system is intuitive, some confusion will inevitably arise when it replaces the old one. Therefore, the new system should maintain enough of the old system's architecture to remain as familiar as possible, without sacrificing design. </p>
+</details>
 
 ---
 
@@ -138,7 +141,7 @@ A new PROWL must also be able to integrate into LMU's human interface. PROWL's s
 <details>
 	<summary>Read</summary>
 
-<h3>Class Registration Task Analysis: </h3>
+<h3>Class Registration Task Analysis </h3>
 <p>0: Register for classes</p>
 <p>0.1: Log into Prowl</p>
 <p>0.1.1: Go to myLMU</p>
@@ -155,7 +158,7 @@ A new PROWL must also be able to integrate into LMU's human interface. PROWL's s
 <p>2.2: Set term you want to register for</p>
 <p>2.3: Search for classes</p>
 
-<h3>View Student Records Task Analysis: </h3>
+<h3>View Student Records Task Analysis </h3>
 <p>1: View Student Records</p>
 <p>0: Log into Prowl</p>
 <p>1: View Transcript</p>
@@ -167,7 +170,7 @@ A new PROWL must also be able to integrate into LMU's human interface. PROWL's s
 <p>1.6: Set transcript type to unofficial transcript</p>
 <p>1.7: Click submit</p>
 
-<h3>Financial Aid Task Analysis: </h3>
+<h3>Financial Aid Task Analysis </h3>
 <p>2: Financial Aid</p>
 <p>0: Log into Prowl</p>
 <p>1: View financial aid award</p>
@@ -183,7 +186,7 @@ A new PROWL must also be able to integrate into LMU's human interface. PROWL's s
 <p>2.4: Locate financial aid holds</p>
 <p>2.5: Click on financial aid holds</p>
 
-<h3>Personal Information Task Analysis: </h3>
+<h3>Personal Information Task Analysis </h3>
 <p>3: View University Id and update personal information</p>
 <p>0: Log into Prowl</p>
 <p>1: Find university Id</p>
@@ -202,7 +205,7 @@ A new PROWL must also be able to integrate into LMU's human interface. PROWL's s
 <p>3: Update Emergency Contact information/ LMU Alert Information/ Ethnicity and Race Information</p>
 <p>Similar to update address(es) and Phone(s) except you click on the specific hyperlink to view and or update the information</p>
 
-<h3>New Prowl Task Analysis: </h3>
+<h3>New Prowl Task Analysis </h3>
 <p>Log Into Prowl</p>
 <p>1: Register for classes</p>
 <p>1.1: Locate Register for classes button on home page</p>
@@ -231,6 +234,7 @@ A new PROWL must also be able to integrate into LMU's human interface. PROWL's s
 
 <details>
 	<summary>Read</summary>
+	
 <h3>Solution Examples</h3>
 	
 <p>Existing solutions can be seen in similar portals for schools and other organizations that utilize less text-heavy layouts and, instead, focus on accessibility.</p>
@@ -254,11 +258,11 @@ A new PROWL must also be able to integrate into LMU's human interface. PROWL's s
 
 <h3>Our goals:</h3>
 
-<p>1. No loss of functionality</p>
-<p>2. Better user experience</p>
-<p>3. Increased user satisfaction</p>
-<p>4. Increased accessibility for neurodiverse populations</p>
-<p>5. Optimization for mobile use</p>
+<p> 1. No loss of functionality </p>
+<p> 2. Better user experience </p>
+<p> 3. Increased user satisfaction </p>
+<p> 4. Increased accessibility for neurodiverse populations </p>
+<p> 5. Optimization for mobile use </p>
 
 </details>
 
