@@ -43,12 +43,14 @@ Prowl is an important factor of student life for Loyola Marymount University. Th
 
 <details>
 	<summary>Read</summary>
-<p>
+
 
 <p>- All students and faculty use PROWL for a variety of reasons. The primary use is registration.
 <p>- 95% of students and faculty surveyed stated that they were not satisfied with PROWL’s current state.
 <p>- PROWL is a very text-heavy, unintuitive design that not only is difficult to navigate, but also does little to cater to neurodiverse populations.
-<p>- PROWL is currently not optimized at all for mobile users. There is no support or format changes when viewing the website on a phone. </p></details>
+<p>- PROWL is currently not optimized at all for mobile users. There is no support or format changes when viewing the website on a phone. </p>
+
+</details>
 
 ---
 
