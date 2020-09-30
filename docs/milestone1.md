@@ -87,6 +87,7 @@
 ### Further User Analysis
 <details>
 	<summary>Read</summary>
+	
 <h3>Platform:</h3>
 	
 <p>PROWL is accessible through any standard web browser to any user with the proper verification. This means that users will be accessing the page through personal mobile devices, personal computers, and the computers provided by LMU in public spaces. It should be noted here that PROWL is currently not formatted to function on a mobile web browser--a clear problem with the interface that should be addressed. </p>
