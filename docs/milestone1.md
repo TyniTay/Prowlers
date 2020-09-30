@@ -50,6 +50,8 @@ Prowl is an important factor of student life for Loyola Marymount University. Th
 <p>- PROWL is a very text-heavy, unintuitive design that not only is difficult to navigate, but also does little to cater to neurodiverse populations.
 <p>- PROWL is currently not optimized at all for mobile users. There is no support or format changes when viewing the website on a phone. </p></details>
 
+---
+
 ### PROWL User Reviews
 <details>
 	<summary>Read</summary><p>
