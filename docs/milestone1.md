@@ -3,11 +3,12 @@
 <details>
 	<summary>__PROWL Design & Functionality Issues__</summary>
 <p>
-Prowl is an important **factor** of student life for Loyola Marymount University. This is what makes the layout and functionality of the site significant. 
+Prowl is an important factor of student life for Loyola Marymount University. This is what makes the layout and functionality of the site significant. 
 
 Prowl was created in the 90’s and has not been revised or updated since then, except for the change in logo. To sum the site up, it is very outdated. 
 
-![Photo1](/images/Prowl1.png)
+<photo>Photo</photo>
+<p>![Photo1](/images/Prowl1.png)</p>
 
 The design of the site does not appeal to the human eye, there is no aesthetic, the navigation bar is rigid, and the text is too small. Considering the center of the retina does not have any blue cones, this makes the category text design weak. The information presentation is very close together, no dividers and mostly all the same color stacked on top of eachother. This can make finding what the user needs difficult. Not to mention, a few of the options are overlapping and can be confusing for which one does what. 
 
