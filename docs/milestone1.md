@@ -1,9 +1,11 @@
 ## MILESTONE 1
 
-### PROWL Design & Functionality Issues
+### The Problem with PROWL
 <details>
-	<summary>Open</summary>
+	<summary>Read</summary>
 <p>
+	
+#### Design & Functionality
 Prowl is an important factor of student life for Loyola Marymount University. This is what makes the layout and functionality of the site significant. 
 
 Prowl was created in the 90’s and has not been revised or updated since then, except for the change in logo. To sum the site up, it is very outdated. 
@@ -28,10 +30,12 @@ The site also sends you an email to reset your password every few months, this c
 </p>
 </details>
 
+---
+
 ### Importance of The Problem
 
 <details>
-	<summary>Open</summary>
+	<summary>Read</summary>
 <p>All students and faculty use PROWL for a variety of reasons. The primary use is registration.
 95% of students and faculty surveyed stated that they were not satisfied with PROWL’s current state.
 PROWL is a very text-heavy, unintuitive design that not only is difficult to navigate, but also does little to cater to neurodiverse populations.
@@ -53,10 +57,12 @@ IMAGE
 While the page below presents a lot of information, the layout and color design does a good job of not overwhelming the user.</p>
 </details>
 
+---
+
 ### Target Users
 
 <details>
-	<summary>Open</summary><p>
+	<summary>Read</summary><p>
 
 ### Primary Users
 
@@ -88,7 +94,12 @@ That said, PROWL should be designed with minimal noise alerts, as many students 
 
 </p></details>
 
-### Further User Analysis: 
+---
+
+### Further User Analysis 
+<details>
+	<summary>Read</summary><p>
+	
 #### Age
 
 The expected ages of various PROWL user demographics, based off of internet research, are as follows:
@@ -101,19 +112,23 @@ Undergraduate and law students are at a relatively young expected age. They will
 Further User Analysis: Economic Standing:
 LMU is a private school, so it is safe to assume that many users of PROWL will be from an affluent background. Affluence will not impact the users' access to PROWL in any way.
 There are also a large number of students receiving scholarships and/or financial aid to attend LMU. There is not much that can be done to help students who struggle with accessing PROWL through personal devices, but computers are provided for them by the university. 
-It may streamline PROWL to hide or remove the financial aid and scholarship sections of the interface for those they do not apply to. However, this may discourage them from accessing these resources should their circumstances change in the future.
+It may streamline PROWL to hide or remove the financial aid and scholarship sections of the interface for those they do not apply to. However, this may discourage them from accessing these resources should their circumstances change in the future. </p></details>
+
+---
 
 ### Issues and Constraints 
 
 <details>
-	<summary>Open</summary><p>
+	<summary>Read</summary><p>
 
 The biggest constraint impacting the design of a new PROWL interface is the larger LMU interface within which PROWL exists. PROWL is accessed through the My LMU homepage and serves as a portal to numerous other pages in LMU's system. Many of the features on any given number of these pages may be more convenient to users as a part of PROWL. However, it is beyond the scope of this project to change the other pages. Having these features in multiple locations may create more confusion than is worth including them in PROWL. 
 A new PROWL must also be able to integrate into LMU's human interface. PROWL's services should be available to users all-year-round, meaning the opportunity to retrain users on a new system is very slim. Even if the new system is intuitive, some confusion will inevitably arise when it replaces the old one. Therefore, the new system should maintain enough of the old system's architecture to remain as familiar as possible, without sacrificing design. </p></details>
 
+---
+
 ### Task Analysis
 <details>
-	<summary>Open</summary><p>
+	<summary>Read</summary><p>
 	
 #### Class Registration Task Analysis: 
 0: Register for classes
@@ -216,6 +231,8 @@ A new design for PROWL should not only be easier to use and simpler to navigate,
 
 ![Example2](/images/exampleprowl.png)
 </p></details>
+
+---
 
 ### Works Cited
 
