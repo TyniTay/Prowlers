@@ -1,5 +1,3 @@
-permalink: /milestone1/
-
 ## MILESTONE 1
 
 ### PROWL Design & Functionality Issues
