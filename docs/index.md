@@ -6,4 +6,6 @@ LMU Prowl was created in the 90's, since then it has not been updated. Yes, the 
 
 ### [Milestone 1](milestone.md)  
 
+### [Milestone 2 (UI Design)](UI-Design.md)
+
 
