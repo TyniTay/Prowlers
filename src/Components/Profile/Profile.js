@@ -7,10 +7,7 @@ const Profile = (props) => {
     const [name, setName] = useState("Jordan Johnson")
 
     useEffect(() => {
-        console.log(showUpdateInfo)
-        if(showUpdateInfo !== false) {
-
-        }
+        console.log("peepee")
     }, [showUpdateInfo])
 
     const updateInfoButtonPress = (e) => {
