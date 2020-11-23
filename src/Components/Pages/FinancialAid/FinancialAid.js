@@ -3,7 +3,7 @@ import React from 'react'
 const FinancialAid = props => {
     return(
         <div>
-            this is the financial aid page
+            This is the financial aid page
         </div>
     )
 }

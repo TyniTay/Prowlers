@@ -35,6 +35,12 @@ export const SidebarData = [
         cName: 'nav-text'
     },
     {
+        title: 'FINANCIAL AID',
+        path: '/financial aid',
+        icon: <RiIcons.RiMoneyDollarCircleFill/>,
+        cName: 'nav-text'
+    },
+    {
         title: 'RESOURCES',
         path: '/resources',
         icon: <RiIcons.RiLightbulbFill/>,
