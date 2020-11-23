@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import profileImage from "../../Assets/PepeHands.png";
+import profileImage from "../../../Assets/noprofilepic.png";
 
 const Profile = (props) => {
     const [showUpdateInfo, setShowUpdateInfo] = useState(false)

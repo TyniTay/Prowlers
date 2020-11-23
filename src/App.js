@@ -1,13 +1,22 @@
 import React from 'react';
 import logo from './lmu.png';
 import './App.css';
-import Dashboard from './Components/Dashboard/Dashboard'
+import Navbar from './Components/Navbar/Navbar'
+import Dashboard from './Components/Pages/Dashboard/Dashboard'
+import { BrowserRouter as Router, Switch, 
+Route} from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-      <Dashboard />
-    </div>
+    <>
+    <Router>
+      <Navbar />
+      <Switch>
+        <Route path='/' />
+      </Switch>
+    </Router>
+    {/*<Dashboard />*/}
+    </>
   );
 }
 
