@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from "react";
 import profileImage from "../../../Assets/noprofilepic.png";
-import './Profile.css'
+import {userName as userName} from "../../../App";
+import './StudentInfo.css'
 
-const Profile = (props) => {
+const StudentInfo = (props) => {
     const [showUpdateInfo, setShowUpdateInfo] = useState(false)
-    const [name, setName] = useState("Jordan Johnson")
+    const [name, setName] = useState(userName)
     const [password, setPassword] = useState("12345")
 
     const updateInfoButtonPress = () => {
@@ -54,4 +55,4 @@ const Profile = (props) => {
     );
 };
 
-export default Profile;
+export default StudentInfo;

@@ -5,7 +5,7 @@ import * as RiIcons from "react-icons/ri"
 
 export const SidebarData = [
       {
-        title: 'PROFILE',
+        title: 'STUDENT INFO',
         path: '/',
         icon: <RiIcons.RiUser2Fill/>,
         cName: 'nav-text'
@@ -14,12 +14,6 @@ export const SidebarData = [
         title: 'DASHBOARD',
         path: '/dashboard',
         icon: <RiIcons.RiDashboardFill/>,
-        cName: 'nav-text'
-    },
-    {
-        title: 'ACCOUNTS',
-        path: '/accounts',
-        icon: <RiIcons.RiWallet3Fill/>,
         cName: 'nav-text'
     },
     {
@@ -44,12 +38,6 @@ export const SidebarData = [
         title: 'RESOURCES',
         path: '/resources',
         icon: <RiIcons.RiLightbulbFill/>,
-        cName: 'nav-text'
-    },
-    {
-        title: 'SETTINGS',
-        path: '/settings',
-        icon: <RiIcons.RiSettings3Fill/>,
         cName: 'nav-text'
     },
 ]
