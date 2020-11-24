@@ -6,10 +6,7 @@ import Registration from '../Registration/Registration'
 const Dashboard = () => {
     return(
         <div>
-            Welcome to Your Dashboard! (it's hell right now...sorry)
-            <Profile />
-            {/*<FinancialAid />*/}
-            {/*<Registration />*/}
+            Welcome to Your Dashboard!
         </div>
     )
 }

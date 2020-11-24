@@ -6,7 +6,7 @@ import * as RiIcons from "react-icons/ri"
 export const SidebarData = [
       {
         title: 'PROFILE',
-        path: '/profile',
+        path: '/',
         icon: <RiIcons.RiUser2Fill/>,
         cName: 'nav-text'
     },
