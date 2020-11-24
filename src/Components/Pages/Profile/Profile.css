@@ -1,0 +1,28 @@
+.profile {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  background-color: lightblue;
+  padding: 10px 10px 10px 10px;
+  width: 500px;
+  height: 250px;
+}
+
+.profileImage {
+}
+
+.studentInfo {
+  text-align: center;
+  line-height: 1.6;
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.updateButton {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}

@@ -1,21 +1,24 @@
 import React, {useState, useEffect} from "react";
 import profileImage from "../../../Assets/noprofilepic.png";
+import './Profile.css'
 
 const Profile = (props) => {
     const [showUpdateInfo, setShowUpdateInfo] = useState(false)
-    const [password, setPassword] = useState("12345")
     const [name, setName] = useState("Jordan Johnson")
+    const [password, setPassword] = useState("12345")
 
-    useEffect(() => {
-        console.log("peepee")
-    }, [showUpdateInfo])
-
-    const updateInfoButtonPress = (e) => {
+    const updateInfoButtonPress = () => {
         setShowUpdateInfo(true)
     }
 
-    const confirmInfoUpdatePress = (e) => {
+    const confirmInfoUpdatePress = () => {
         setShowUpdateInfo(false)
+    }
+
+    const handleKeypress = (e) => {
+        if (e.keyCode === 13) {
+            confirmInfoUpdatePress();
+        }
     }
 
     if (showUpdateInfo) {
@@ -31,6 +34,7 @@ const Profile = (props) => {
                         type = "text"
                         onChange = {e => setName(e.target.value)}
                         value = {name}
+                        onKeyDown={handleKeypress}
                         >
                     </input>
                 </form>
@@ -39,19 +43,18 @@ const Profile = (props) => {
         )
     }
     return (
-        <div style={{ backgroundColor: "lightBlue" }}>
-            <img style={{display:'inline-block'}} src={profileImage} alt="loading" width="100px" height="100px"></img>
-            <h1 style={{display:'inline-block'}}>{name}</h1>
-            <h2 style={{display:'inlineFlex'}}>University ID: 555555555</h2>
-            <button onClick={updateInfoButtonPress}>update information</button>
+        <div className="profile">
+            <div className="profileImage">
+                <img style={{display:'inline-block'}} src={profileImage} alt="loading" width="100px" height="100px"></img>
+            </div>
+            <div className="studentInfo">
+                <h1 style={{display:'inline-block'}}>{name}</h1>
+                <h2 style={{display:'inlineFlex'}}>University ID: 555555555</h2>
+                <h2 style={{display:'inlineFlex'}}>Email: jjohn@lion.lmu.edu</h2>
+            </div>
+            <button className = "updateButton"onClick={updateInfoButtonPress}>update information</button>
         </div>
     );
 };
 
 export default Profile;
-
-/*
-
-
-
-*/
