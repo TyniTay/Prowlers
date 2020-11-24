@@ -23,11 +23,8 @@ const Profile = (props) => {
 
     if (showUpdateInfo) {
         return(
-            <div>
-                Update Information
-                
-                <form>
-                    Update name
+            <div className="updatePage">
+                <form className="updateForm">
                     <input
                         id = "updateName"
                         placeolder = "Input updated name."
@@ -38,7 +35,7 @@ const Profile = (props) => {
                         >
                     </input>
                 </form>
-                <button onClick={confirmInfoUpdatePress}>Confirm changes</button>
+                <button className = "confirmButton" onClick={confirmInfoUpdatePress}>confirm changes</button>
             </div>
         )
     }
@@ -52,7 +49,7 @@ const Profile = (props) => {
                 <h2 style={{display:'inlineFlex'}}>University ID: 555555555</h2>
                 <h2 style={{display:'inlineFlex'}}>Email: jjohn@lion.lmu.edu</h2>
             </div>
-            <button className = "updateButton"onClick={updateInfoButtonPress}>update information</button>
+            <button className = "updateButton"onClick={updateInfoButtonPress}>update info</button>
         </div>
     );
 };
