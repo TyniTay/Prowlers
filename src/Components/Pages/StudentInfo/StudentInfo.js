@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from "react";
 import profileImage from "../../../Assets/noprofilepic.png";
-import {userName as userName} from "../../../App";
+import {getName, setName as setUsername} from "../../../App";
 import './StudentInfo.css'
 
 const StudentInfo = (props) => {
     const [showUpdateInfo, setShowUpdateInfo] = useState(false)
-    const [name, setName] = useState(userName)
+    const [name, setName] = useState(getName())
     const [password, setPassword] = useState("12345")
 
     const updateInfoButtonPress = () => {
@@ -13,7 +13,9 @@ const StudentInfo = (props) => {
     }
 
     const confirmInfoUpdatePress = () => {
+        console.log("CONFIRM INFO: "+ name)
         setShowUpdateInfo(false)
+        setUsername(name)
     }
 
     const handleKeypress = (e) => {

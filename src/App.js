@@ -30,6 +30,15 @@ function App() {
   );
 }
 
+const user = {
+  name: 'Jordan Johnson'
+}
+
+const getName = () => user.name
+const setName = name => {
+  console.log("SETTING NAME")
+  user.name = name}
+
 const userName = "Jordan Johnson"
-export {userName};
+export {getName, setName}
 export default App;
