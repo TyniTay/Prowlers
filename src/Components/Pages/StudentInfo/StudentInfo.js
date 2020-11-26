@@ -5,6 +5,21 @@ import profileImage from "../../../Assets/noprofilepic.png";
 import {getUsername, setUsername} from "../../../Data";
 import './StudentInfo.css'
 
+function otherInfo() {
+    return(
+         <div className ="otherInfo">
+                    <h3>University ID: 555555555</h3>
+                    <h3>Email: jjohn@lion.lmu.edu</h3>
+        </div>
+    )
+}
+
+function legalName() {
+    return (
+        <h6 style={{textIndent: '2px'}}>Legal Name: Jordan J Johnson</h6>
+    )
+}
+
 const StudentInfo = (props) => {
     const [updatingInfo, setUpdatingInfo] = useState(false)
     const [name, setName] = useState(getUsername())
@@ -28,16 +43,19 @@ const StudentInfo = (props) => {
     if (updatingInfo) {
         return(
             <div className="profile editable">
-                <form className="studentInfo">
-                    <input
-                        placeolder = "update name."
-                        type = "text"
-                        onChange = {e => setName(e.target.value)}
-                        value = {name}
-                        onKeyDown={handleKeypress}
-                        >
-                    </input>
+                <form className="studentName">
+                        <input
+                            type = "text"
+                            onChange = {e => setName(e.target.value)}
+                            value = {name}
+                            onKeyDown={handleKeypress}
+
+                            style={{fontSize: '20px', padding: '0px 5px'}}
+                            >
+                        </input>
+                        {legalName()}
                 </form>
+                 {otherInfo()}
                 <IconContext.Provider value={{size: '2em'}}>
                 <button className = "updateButton" onClick={handleConfirmInfo}><RiIcons.RiLockUnlockFill/></button>
                 </IconContext.Provider>
@@ -49,16 +67,11 @@ const StudentInfo = (props) => {
             {/* <div className="profileImage">
                 <img style={{display:'inline-block'}} src={profileImage} alt="loading" width="100px" height="100px"></img>
             </div> */}
-            <div className="studentInfo">
-                <div className ="referToStudent">
-                    <h2>{name}</h2>
-                    <h6 style={{textIndent: '5px'}}>Legal Name: Jordan Johnson</h6>
-                </div>
-                <div className ="otherInfo">
-                    <h3>University ID: 555555555</h3>
-                    <h3>Email: jjohn@lion.lmu.edu</h3>
-                </div>
+            <div className ="studentName">
+                <h2>{name}</h2>
+                {legalName()}
             </div>
+            {otherInfo()}
             <IconContext.Provider value={{size: '2em'}}>
                 <button className = "updateButton" onClick={handleUpdateInfo}><RiIcons.RiLockFill/></button>
             </IconContext.Provider>

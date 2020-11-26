@@ -33,17 +33,17 @@
   color: green;
 }
 
-.studentInfo {
+.studentName {
   position: absolute;
   top: 8px;
   left: 16px;
   padding: 30px;
 }
 
-.referToStudent {
-  line-height: 20px;
-}
-
 .otherInfo {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  padding: 30px;
   line-height: 30px;
 }
