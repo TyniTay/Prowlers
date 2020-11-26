@@ -2,52 +2,48 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  z-index: -1;
   transform: translate(-50%, -50%);
+  z-index: -1;
   background-color: lightblue;
-  padding: 10px 10px 10px 10px;
-  width: 500px;
-  height: 250px;
+  display: flex;
+  min-width: 500px;
+  min-height: 250px;
+
+  transition: 850ms;
 }
 
-.profileImage {
-}
+.profile.editable {
+  min-width: 500px;
+  min-height: 300px;
 
-.studentInfo {
-  text-align: center;
-  line-height: 1.6;
-  position: absolute;
-  top: 8px;
-  right: 16px;
+  transition: 850ms;
 }
 
 .updateButton {
+  border: none;
+  background: none;
+  outline: none;
   position: absolute;
   bottom: 8px;
-  left: 16px;
+  right: 16px;
+  padding: 0px 5px 7px 0px;
 }
 
-.updatePage {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: -1;
-  transform: translate(-50%, -50%);
-  background-color: lightblue;
-  padding: 10px 10px 10px 10px;
-  width: 500px;
-  height: 250px;
-  text-align: center;
+.updateButton:hover {
+  color: green;
 }
 
-.updateForm {
+.studentInfo {
   position: absolute;
-  top: 40%;
-  right: 35%;
+  top: 8px;
+  left: 16px;
+  padding: 30px;
 }
 
-.confirmButton {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
+.referToStudent {
+  line-height: 20px;
+}
+
+.otherInfo {
+  line-height: 30px;
 }

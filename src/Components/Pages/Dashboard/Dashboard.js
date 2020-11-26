@@ -1,5 +1,5 @@
 import React from 'react'
-import {getName} from "../../../App";
+import {getUsername} from "../../../Data";
 import Profile from '../StudentInfo/StudentInfo'
 import FinancialAid from '../FinancialAid/FinancialAid'
 import Registration from '../Registration/Registration'
@@ -7,7 +7,7 @@ import Registration from '../Registration/Registration'
 const Dashboard = () => {
     return(
         <div>
-            {"Welcome to Your Dashboard, "+getName()+"!"}
+            {"Welcome to Your Dashboard, "+getUsername()+"!"}
         </div>
     )
 }
