@@ -23,7 +23,6 @@ function legalName() {
 const StudentInfo = (props) => {
     const [updatingInfo, setUpdatingInfo] = useState(false)
     const [name, setName] = useState(getUsername())
-    const [password, setPassword] = useState("12345")
 
     const handleUpdateInfo = () => {
         setUpdatingInfo(true)
@@ -39,29 +38,59 @@ const StudentInfo = (props) => {
             handleConfirmInfo();
         }
     }
+    
+    var passwordMismatch = false;
+
+    function passwordForm(placeholder) {
+        return(
+            <input
+                className="passwordForm"
+                type = "text"
+                placeholder = {placeholder}
+                onKeyDown={handleKeypress}
+                style={{fontSize: '20px', padding: '0px 5px'}}
+                >
+            </input>
+        )
+    }
+
+    function passwordResetter(p1, p2) {
+        if(p1 === p2) {
+            return(
+                <div>
+                    {passwordForm("new password")}
+                    {passwordForm("confirm password")}
+                    <h6>passwords do not match</h6>
+                </div>
+            );
+        }
+        return(false);
+    }
 
     if (updatingInfo) {
         return(
             <div className="profile editable">
                 <form className="studentName">
-                        <input
-                            type = "text"
-                            onChange = {e => setName(e.target.value)}
-                            value = {name}
-                            onKeyDown={handleKeypress}
-
-                            style={{fontSize: '20px', padding: '0px 5px'}}
-                            >
-                        </input>
-                        {legalName()}
+                    <input
+                        type = "text"
+                        onChange = {e => setName(e.target.value)}
+                        value = {name}
+                        onKeyDown={handleKeypress}
+                        style={{fontSize: '20px', padding: '0px 5px'}}
+                        >
+                    </input>
+                    {legalName()}
                 </form>
-                    {emailAndID()}
-                     <h6 className="updateDisclaimer" style={{color: '#454545', textIndent: '2px'}}>
-                         Please contact administration to change your email and legal name
-                    </h6>
-                
+                {passwordForm("change password")}
+                {passwordForm("confirm password")}
+                {emailAndID()}
+                <h6 className="updateDisclaimer" style={{color: '#454545', textIndent: '2px'}}>
+                    Contact administration to update your email and legal name
+                </h6>
                 <IconContext.Provider value={{size: '2em'}}>
-                <button className = "updateButton" onClick={handleConfirmInfo}><RiIcons.RiLockUnlockFill/></button>
+                    <button className = "updateButton" onClick={handleConfirmInfo}>
+                        <RiIcons.RiLockUnlockFill/>
+                    </button>
                 </IconContext.Provider>
             </div>
         )
@@ -77,7 +106,9 @@ const StudentInfo = (props) => {
             </div>
             {emailAndID()}
             <IconContext.Provider value={{size: '2em'}}>
-                <button className = "updateButton" onClick={handleUpdateInfo}><RiIcons.RiLockFill/></button>
+                <button className = "updateButton" onClick={handleUpdateInfo}>
+                    <RiIcons.RiLockFill/>
+                </button>
             </IconContext.Provider>
         </div>
     );
