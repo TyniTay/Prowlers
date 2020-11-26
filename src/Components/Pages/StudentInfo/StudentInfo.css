@@ -7,7 +7,7 @@
   background-color: lightblue;
   display: flex;
   min-width: 500px;
-  min-height: 250px;
+  min-height: 200px;
 
   transition: 850ms;
 }
@@ -40,10 +40,17 @@
   padding: 30px;
 }
 
-.otherInfo {
+.emailAndID {
   position: absolute;
   bottom: 8px;
   left: 16px;
-  padding: 30px;
   line-height: 30px;
+  padding: 30px;
+}
+
+.updateDisclaimer {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  padding: 0px 0px 20px 28px;
 }

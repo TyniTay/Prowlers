@@ -5,9 +5,9 @@ import profileImage from "../../../Assets/noprofilepic.png";
 import {getUsername, setUsername} from "../../../Data";
 import './StudentInfo.css'
 
-function otherInfo() {
+function emailAndID() {
     return(
-         <div className ="otherInfo">
+         <div className ="emailAndID">
                     <h3>University ID: 555555555</h3>
                     <h3>Email: jjohn@lion.lmu.edu</h3>
         </div>
@@ -16,7 +16,7 @@ function otherInfo() {
 
 function legalName() {
     return (
-        <h6 style={{textIndent: '2px'}}>Legal Name: Jordan J Johnson</h6>
+        <h6 style={{color: '#454545', textIndent: '2px'}}>Legal Name: Jordan J Johnson</h6>
     )
 }
 
@@ -55,7 +55,11 @@ const StudentInfo = (props) => {
                         </input>
                         {legalName()}
                 </form>
-                 {otherInfo()}
+                    {emailAndID()}
+                     <h6 className="updateDisclaimer" style={{color: '#454545', textIndent: '2px'}}>
+                         Please contact administration to change your email and legal name
+                    </h6>
+                
                 <IconContext.Provider value={{size: '2em'}}>
                 <button className = "updateButton" onClick={handleConfirmInfo}><RiIcons.RiLockUnlockFill/></button>
                 </IconContext.Provider>
@@ -71,7 +75,7 @@ const StudentInfo = (props) => {
                 <h2>{name}</h2>
                 {legalName()}
             </div>
-            {otherInfo()}
+            {emailAndID()}
             <IconContext.Provider value={{size: '2em'}}>
                 <button className = "updateButton" onClick={handleUpdateInfo}><RiIcons.RiLockFill/></button>
             </IconContext.Provider>
