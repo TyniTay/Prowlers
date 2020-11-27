@@ -39,26 +39,44 @@ const StudentInfo = (props) => {
     const handleConfirmInfo = () => {
         setUpdatingInfo(false)
         setUsername(name)
+        setChangeEntry("")
+        setConfirmEntry("")
+        setPasswordMessage("")
     }
 
     const handleKeypress = (e) => {
+        var elementID = document.activeElement.id
+        console.log("ACTIVE ELEMENT: "+elementID)
         if (e.keyCode === 13) {
-            handleConfirmInfo();
+            if (elementID === "nameID") {
+                handleConfirmInfo();
+            } else {
+                document.getElementById(elementID).blur();
+            }
         }
     }
 
     const handlePasswordBlur = (e) => {
-        console.log("HANDLING PASSWORD BLUR")
-        setPasswordMessage("Here is the password message")
+        if(changeEntry !== "" && confirmEntry !== "") {
+            if(changeEntry === confirmEntry) {
+                setPasswordMessage("password confirmed")
+            } else {
+                setPasswordMessage("passwords do not match")
+            }
+        } else {
+            setPasswordMessage("")
+        }
     }
 
-    function passwordForm(placeholder, entryUpdater) {
+    function passwordForm(idName, placeholder, entryUpdater) {
         return(
             <input
-                className="passwordForm"
+                id = {idName}
+                className = "passwordForm"
                 type = "password"
                 onBlur = {handlePasswordBlur}
                 onChange = {e => (entryUpdater(e.target.value))}
+                onKeyDown={handleKeypress}
                 placeholder = {placeholder}
                 style={{fontSize: '20px', padding: '0px 5px'}}
                 >
@@ -71,17 +89,20 @@ const StudentInfo = (props) => {
             <div className="profile editable">
                 <form className="studentName">
                     <input
+                        className = "studentName"
+
+                        id = "nameID"
                         type = "text"
-                        onChange = {e => setName(e.target.value)}
                         value = {name}
+                        onChange = {e => setName(e.target.value)}
                         onKeyDown={handleKeypress}
                         style={{fontSize: '20px', padding: '0px 5px'}}
                         >
                     </input>
                     {legalName()}
                 </form>
-                {passwordForm("change password", setChangeEntry)}
-                {passwordForm("confirm password", setConfirmEntry)}
+                {passwordForm("changePasswordID", "change password", setChangeEntry)}
+                {passwordForm("confirmPasswordID", "confirm password", setConfirmEntry)}
                 <h2>{passwordMessage}</h2>
                 {emailAndID()}
                 <h6 className="updateDisclaimer" style={{color: '#454545', textIndent: '2px'}}>
