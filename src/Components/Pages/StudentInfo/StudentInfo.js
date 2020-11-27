@@ -20,18 +20,6 @@ function legalName() {
     )
 }
 
-function passwordForm(placeholder, entryUpdater) {
-    return(
-        <input
-            className="passwordForm"
-            type = "password"
-            onChange = {e => (entryUpdater(e.target.value))}
-            placeholder = {placeholder}
-            style={{fontSize: '20px', padding: '0px 5px'}}
-            >
-        </input>
-    )
-}
 
 var somethingTyped = false;
 
@@ -59,13 +47,31 @@ const StudentInfo = (props) => {
         }
     }
 
+    const handlePasswordBlur = (e) => {
+        console.log("HANDLING PASSWORD BLUR")
+        setPasswordMessage("Here is the password message")
+    }
+
+    function passwordForm(placeholder, entryUpdater) {
+        return(
+            <input
+                className="passwordForm"
+                type = "password"
+                onBlur = {handlePasswordBlur}
+                onChange = {e => (entryUpdater(e.target.value))}
+                placeholder = {placeholder}
+                style={{fontSize: '20px', padding: '0px 5px'}}
+                >
+            </input>
+        )
+    }      
+
     if (updatingInfo) {
         return(
             <div className="profile editable">
                 <form className="studentName">
                     <input
                         type = "text"
-                        onBlur = {console.log("WHY")}
                         onChange = {e => setName(e.target.value)}
                         value = {name}
                         onKeyDown={handleKeypress}
