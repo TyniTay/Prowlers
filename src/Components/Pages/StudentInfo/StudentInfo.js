@@ -20,9 +20,6 @@ function legalName() {
     )
 }
 
-
-var somethingTyped = false;
-
 const StudentInfo = (props) => {
     const [updatingInfo, setUpdatingInfo] = useState(false)
     const [name, setName] = useState(getUsername())
@@ -30,25 +27,30 @@ const StudentInfo = (props) => {
     const [changeEntry, setChangeEntry] = useState("")
     const [confirmEntry, setConfirmEntry] = useState("")
     const [passwordMessage, setPasswordMessage] = useState("")
-    
+    const [messageType, setMessageType] = useState("none")
 
     const handleUpdateInfo = () => {
         setUpdatingInfo(true)
     }
 
     const handleConfirmInfo = () => {
-        setUpdatingInfo(false)
-        setUsername(name)
-        setChangeEntry("")
-        setConfirmEntry("")
-        setPasswordMessage("")
+        if (changeEntry === confirmEntry) {
+            setUpdatingInfo(false)
+            setUsername(name)
+            setChangeEntry("")
+            setConfirmEntry("")
+            setPasswordMessage("")
+        } else if ((changeEntry !== "" ^ confirmEntry !== "")
+            && passwordMessage != "enter password twice") {
+                setMessageType("alert")
+                setPasswordMessage("enter password twice")
+        }
     }
 
     const handleKeypress = (e) => {
         var elementID = document.activeElement.id
-        console.log("ACTIVE ELEMENT: "+elementID)
         if (e.keyCode === 13) {
-            if (elementID === "nameID") {
+            if (elementID === "nameID" && changeEntry === confirmEntry) {
                 handleConfirmInfo();
             } else {
                 document.getElementById(elementID).blur();
@@ -57,15 +59,20 @@ const StudentInfo = (props) => {
     }
 
     const handlePasswordBlur = (e) => {
-        if(changeEntry !== "" && confirmEntry !== "") {
-            if(changeEntry === confirmEntry) {
-                setPasswordMessage("password confirmed")
-            } else {
-                setPasswordMessage("passwords do not match")
+            if(changeEntry !== "" && confirmEntry !== "") {
+                if(changeEntry === confirmEntry) {
+                    setMessageType("confirmation")
+                    setPasswordMessage("valid password")
+                } else {
+                    setMessageType("alert")
+                    setPasswordMessage("passwords do not match")
+                }
+            } else if (changeEntry === "" && confirmEntry === "") {
+                setPasswordMessage("")
+            } else if (passwordMessage != "enter password twice") {
+                setMessageType("alert")
+                setPasswordMessage("")
             }
-        } else {
-            setPasswordMessage("")
-        }
     }
 
     function passwordForm(idName, placeholder, entryUpdater) {
@@ -103,7 +110,7 @@ const StudentInfo = (props) => {
                 </form>
                 {passwordForm("changePasswordID", "change password", setChangeEntry)}
                 {passwordForm("confirmPasswordID", "confirm password", setConfirmEntry)}
-                <h2>{passwordMessage}</h2>
+                <h4 className = {messageType}>{passwordMessage}</h4>
                 {emailAndID()}
                 <h6 className="updateDisclaimer" style={{color: '#454545', textIndent: '2px'}}>
                     Contact administration to update your email and legal name

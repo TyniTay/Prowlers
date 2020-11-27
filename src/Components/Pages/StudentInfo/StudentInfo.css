@@ -32,7 +32,7 @@
 }
 
 .updateButton:hover {
-  color: green;
+  color: blue;
 }
 
 .studentName {
@@ -53,4 +53,13 @@
 .passwordForm {
   margin: 0px 0px 5px 75px;
   max-width: 350px;
+}
+
+.alert {
+  animation: shake 0.5s;
+  color: red;
+}
+
+.confirmation {
+  color: green;
 }
