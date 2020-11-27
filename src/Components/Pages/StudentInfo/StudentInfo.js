@@ -20,9 +20,29 @@ function legalName() {
     )
 }
 
+function passwordForm(placeholder, entryUpdater) {
+    return(
+        <input
+            className="passwordForm"
+            type = "password"
+            onChange = {e => (entryUpdater(e.target.value))}
+            placeholder = {placeholder}
+            style={{fontSize: '20px', padding: '0px 5px'}}
+            >
+        </input>
+    )
+}
+
+var somethingTyped = false;
+
 const StudentInfo = (props) => {
     const [updatingInfo, setUpdatingInfo] = useState(false)
     const [name, setName] = useState(getUsername())
+
+    const [changeEntry, setChangeEntry] = useState("")
+    const [confirmEntry, setConfirmEntry] = useState("")
+    const [passwordMessage, setPasswordMessage] = useState("")
+    
 
     const handleUpdateInfo = () => {
         setUpdatingInfo(true)
@@ -38,34 +58,6 @@ const StudentInfo = (props) => {
             handleConfirmInfo();
         }
     }
-    
-    var passwordMismatch = false;
-
-    function passwordForm(placeholder) {
-        return(
-            <input
-                className="passwordForm"
-                type = "text"
-                placeholder = {placeholder}
-                onKeyDown={handleKeypress}
-                style={{fontSize: '20px', padding: '0px 5px'}}
-                >
-            </input>
-        )
-    }
-
-    function passwordResetter(p1, p2) {
-        if(p1 === p2) {
-            return(
-                <div>
-                    {passwordForm("new password")}
-                    {passwordForm("confirm password")}
-                    <h6>passwords do not match</h6>
-                </div>
-            );
-        }
-        return(false);
-    }
 
     if (updatingInfo) {
         return(
@@ -73,6 +65,7 @@ const StudentInfo = (props) => {
                 <form className="studentName">
                     <input
                         type = "text"
+                        onBlur = {console.log("WHY")}
                         onChange = {e => setName(e.target.value)}
                         value = {name}
                         onKeyDown={handleKeypress}
@@ -81,8 +74,9 @@ const StudentInfo = (props) => {
                     </input>
                     {legalName()}
                 </form>
-                {passwordForm("change password")}
-                {passwordForm("confirm password")}
+                {passwordForm("change password", setChangeEntry)}
+                {passwordForm("confirm password", setConfirmEntry)}
+                <h2>{passwordMessage}</h2>
                 {emailAndID()}
                 <h6 className="updateDisclaimer" style={{color: '#454545', textIndent: '2px'}}>
                     Contact administration to update your email and legal name
