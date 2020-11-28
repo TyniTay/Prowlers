@@ -3,7 +3,7 @@ import React from 'react'
 const Records = props => {
     return(
         <div>
-            This will be the records page
+            The records page is unimplemented
         </div>
     )
 }
