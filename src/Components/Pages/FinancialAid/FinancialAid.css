@@ -1,5 +1,4 @@
 .financePage {
-  flex-wrap: wrap;
   z-index: -1000;
   color: darkgray;
   font-size: 300%;
@@ -31,6 +30,8 @@
   position: fixed;
   left: 500px;
   top: 195px;
+  width: 300px;
+  vertical-align: 300px;
   border-radius: 25px;
 }
 

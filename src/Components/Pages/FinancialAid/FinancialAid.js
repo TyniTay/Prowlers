@@ -30,11 +30,9 @@ const FinancialAid = props => {
     return(
         <div className='financePage'>
             Financial Aid
-            <h1 className='yearSelect'>
-                Financial Aid Status:
-            </h1>
-
-            {dropDown()}
+            <body className='yearSelect'>
+                Financial Aid Status: {dropDown()}
+            </body>
             {docUpload()}
 
             <p className='award'>
