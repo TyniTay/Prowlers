@@ -1,0 +1,228 @@
+body {
+    background-color: #F2F2F2;
+}
+
+
+h1 {
+    /* Layout Properties */
+    padding-left: 5%;
+    padding-bottom: 30px;
+    
+    /* Content UI */
+    color: #3E2E2E;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 48px;
+}
+
+h2 {
+    /* Layout Properties */
+    padding-left: 5%;;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    /* Content UI */
+    color: #3E2E2E;
+    font-family: 'Open Sans';
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 36px;
+}
+
+.dateTime {
+    /* Layout Properties */
+    position: absolute;
+    right: 5%;
+    top: 120px;
+    padding: 10px;
+
+    color:#878B8E;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.p {
+    color: #3E2E2E;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.recentUpdates {
+    display: inline-block;
+    padding-left: 5%;
+}
+
+.card {
+    /* Layout Properties */
+    min-width: 560px;
+    width: 560px;
+    height: 60px;
+    margin-bottom: 10px;
+    
+
+    /* UI Properties */
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 6px #00000029;
+    opacity: 1;
+
+    /* Text Properties */
+    text-align: left;
+    padding: 18px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #0076A3;
+    line-height: 36px;
+    font-size: 24px;
+}
+
+.coursePreview {
+    padding: 100px;
+    padding-left: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.cardL {
+     /* Layout Properties */
+     max-width: 550px;
+     width: 550px;
+     min-height: 100px;
+     display: inline-block;
+     margin-bottom: 10px;
+     margin-right: 20px;
+     
+     
+     /* UI Properties */
+     background: #0076A3 0% 0% no-repeat padding-box;
+     box-shadow: 0px 2px 6px #00000029;
+     opacity: 1;
+ 
+     /* Text Properties */
+     color: #ffffff;
+     text-align: left;
+     padding: 18px 10px;
+     font-family: 'Roboto', sans-serif;
+     font-weight: normal;
+     font-size: 16px;
+     line-height: 24px;
+}
+
+.courseTitle {
+    font-size: 14px;
+    line-height: 21px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: oblique;
+    padding-left: 20px;
+    text-transform: uppercase;  
+}
+
+a {
+    text-align: left;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24px;
+    font-weight: bold;;
+    padding-left: 20px;
+}
+
+a.time {
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    float: right;
+}
+
+a.days {
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    float: right;
+}
+
+p.subtext {
+    text-align: left;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24px;
+    padding-left: 20px;
+}
+
+.resourceSection {
+    display: inline-block;
+    padding-left: 5%;
+    padding-top: 20px;
+}
+
+.card3 {
+    /* Layout */
+    height: 200px;
+    width: 300px;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: inline-block;
+
+    /* UI Properties */
+    background: #0076A3 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 6px #00000029;
+    opacity: 1;
+    position: relative;
+}
+
+div.resourceSection section {
+    padding: 20px;
+    text-anchor: middle;
+    align-content: center;
+    margin-right: 20px;
+}
+
+section.card3 h1 {
+    font-size: 16px;
+    font-family:'Open Sans', sans-serif;
+    font-weight: bold;
+    line-height: normal;
+    text-align: center;
+    position: relative;
+    top: 35px;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+
+section.card3 Button {
+    color: #ffffff;
+    width: 60;
+    height: 30;
+    background: rgb(231, 231, 231);
+    opacity: 1;
+    text-align: left;
+    display: inline-block;
+    left: 100px;
+    top: 40px;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.blue {
+    background: #63BAF5;
+}
+
+.purple {
+    background: #BF89FE;
+}
+
+.green {
+    background:#75D862;
+}
+
+.orange {
+    background: #FB8540;
+}

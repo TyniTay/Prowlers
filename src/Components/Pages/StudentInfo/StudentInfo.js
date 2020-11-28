@@ -5,11 +5,11 @@ import profileImage from "../../../Assets/noprofilepic.png";
 import {getUsername, setUsername} from "../../../Data";
 import './StudentInfo.css'
 
-function emailAndID() {
+function emailAndID(className) {
     return(
-         <div className ="emailAndID">
-                    <h3>University ID: 555555555</h3>
-                    <h3>Email: jjohn@lion.lmu.edu</h3>
+         <div className = {className}>
+            <h3>University ID: 555555555</h3>
+            <h3>Email: jjohn@lion.lmu.edu</h3>
         </div>
     )
 }
@@ -20,45 +20,77 @@ function legalName() {
     )
 }
 
-
-var somethingTyped = false;
-
-const StudentInfo = (props) => {
+const StudentInfo = () => {
     const [updatingInfo, setUpdatingInfo] = useState(false)
     const [name, setName] = useState(getUsername())
-
     const [changeEntry, setChangeEntry] = useState("")
     const [confirmEntry, setConfirmEntry] = useState("")
     const [passwordMessage, setPasswordMessage] = useState("")
-    
+    const [messageType, setMessageType] = useState("none")
 
     const handleUpdateInfo = () => {
         setUpdatingInfo(true)
     }
 
     const handleConfirmInfo = () => {
+        if (changeEntry === confirmEntry) {
+            setUpdatingInfo(false)
+            setUsername(name)
+            setChangeEntry("")
+            setConfirmEntry("")
+            setPasswordMessage("")
+        } else if ((changeEntry !== "" ^ confirmEntry !== "")
+            && passwordMessage != "enter password twice") {
+                setMessageType("alert")
+                setPasswordMessage("enter password twice")
+        }
+    }
+
+    const handleCancelUpdate = () => {
         setUpdatingInfo(false)
-        setUsername(name)
+        setName(getUsername())
+        setChangeEntry("")
+        setConfirmEntry("")
+        setPasswordMessage("")
     }
 
     const handleKeypress = (e) => {
+        var elementID = document.activeElement.id
         if (e.keyCode === 13) {
-            handleConfirmInfo();
+            if (elementID === "nameID" && changeEntry === confirmEntry) {
+                handleConfirmInfo();
+            } else {
+                document.getElementById(elementID).blur();
+            }
         }
     }
 
     const handlePasswordBlur = (e) => {
-        console.log("HANDLING PASSWORD BLUR")
-        setPasswordMessage("Here is the password message")
+            if(changeEntry !== "" && confirmEntry !== "") {
+                if(changeEntry === confirmEntry) {
+                    setMessageType("confirmation")
+                    setPasswordMessage("valid password")
+                } else {
+                    setMessageType("alert")
+                    setPasswordMessage("passwords do not match")
+                }
+            } else if (changeEntry === "" && confirmEntry === "") {
+                setPasswordMessage("")
+            } else if (passwordMessage != "enter password twice") {
+                setMessageType("alert")
+                setPasswordMessage("")
+            }
     }
 
-    function passwordForm(placeholder, entryUpdater) {
+    function passwordForm(idName, placeholder, entryUpdater) {
         return(
             <input
-                className="passwordForm"
+                id = {idName}
+                className = "passwordForm"
                 type = "password"
                 onBlur = {handlePasswordBlur}
                 onChange = {e => (entryUpdater(e.target.value))}
+                onKeyDown={handleKeypress}
                 placeholder = {placeholder}
                 style={{fontSize: '20px', padding: '0px 5px'}}
                 >
@@ -66,50 +98,68 @@ const StudentInfo = (props) => {
         )
     }      
 
-    if (updatingInfo) {
+    if (updatingInfo) {        
         return(
-            <div className="profile editable">
-                <form className="studentName">
-                    <input
-                        type = "text"
-                        onChange = {e => setName(e.target.value)}
-                        value = {name}
-                        onKeyDown={handleKeypress}
-                        style={{fontSize: '20px', padding: '0px 5px'}}
-                        >
-                    </input>
-                    {legalName()}
-                </form>
-                {passwordForm("change password", setChangeEntry)}
-                {passwordForm("confirm password", setConfirmEntry)}
-                <h2>{passwordMessage}</h2>
-                {emailAndID()}
-                <h6 className="updateDisclaimer" style={{color: '#454545', textIndent: '2px'}}>
-                    Contact administration to update your email and legal name
-                </h6>
-                <IconContext.Provider value={{size: '2em'}}>
-                    <button className = "updateButton" onClick={handleConfirmInfo}>
-                        <RiIcons.RiLockUnlockFill/>
-                    </button>
-                </IconContext.Provider>
+            <div className = "widgets">
+                <div className="profile editable">
+                    <form className="studentName">
+                        <input
+                            className = "studentName"
+                            id = "nameID"
+                            type = "text"
+                            value = {name}
+                            onChange = {e => setName(e.target.value)}
+                            onKeyDown={handleKeypress}
+                            style={{fontSize: '20px', padding: '0px 5px'}}
+                            >
+                        </input>
+                        {legalName()}
+                    </form>
+                    {passwordForm("changePasswordID", "change password", setChangeEntry)}
+                    {passwordForm("confirmPasswordID", "confirm password", setConfirmEntry)}
+                    <h4 className = {messageType}>{passwordMessage}</h4>
+                    {emailAndID("emailAndID disclaimerBelow")}
+                    <h6 className="updateDisclaimer" style={{color: '#454545', textIndent: '2px'}}>
+                        Contact administration to update your email and legal name
+                    </h6>
+                    <IconContext.Provider value={{size: '2em'}}>
+                        <button className = "cancelButton" onClick={handleCancelUpdate}>
+                            <RiIcons.RiCloseFill/>
+                        </button>
+                    </IconContext.Provider>
+                    <IconContext.Provider value={{size: '2em'}}>
+                        <button className = "updateButton" onClick={handleConfirmInfo}>
+                            <RiIcons.RiLockUnlockFill/>
+                        </button>
+                    </IconContext.Provider>
+                </div>
+                <div className="contacts">
+                    <h4 style={{padding: "10px 10px 10px 20px", color: "grey"}}>
+                        the emergency contacts widget is unimplemented
+                    </h4>
+                </div>
             </div>
         )
     }
     return (
-        <div className="profile">
-            {/* <div className="profileImage">
-                <img style={{display:'inline-block'}} src={profileImage} alt="loading" width="100px" height="100px"></img>
-            </div> */}
-            <div className ="studentName">
-                <h2>{name}</h2>
-                {legalName()}
+        <div className = "widgets">
+            <div className="profile">
+                <div className ="studentName">
+                    <h2>{getUsername()}</h2>
+                    {legalName()}
+                </div>
+                    {emailAndID("emailAndID")}
+                <IconContext.Provider value={{size: '2em'}}>
+                    <button className = "updateButton" onClick={handleUpdateInfo}>
+                        <RiIcons.RiLockFill/>
+                    </button>
+                </IconContext.Provider>
             </div>
-            {emailAndID()}
-            <IconContext.Provider value={{size: '2em'}}>
-                <button className = "updateButton" onClick={handleUpdateInfo}>
-                    <RiIcons.RiLockFill/>
-                </button>
-            </IconContext.Provider>
+            <div className="contacts">
+                 <h4 style={{padding: "10px 10px 10px 20px", color: "grey"}}>
+                        the emergency contacts widget is unimplemented
+                </h4>
+            </div>
         </div>
     );
 };

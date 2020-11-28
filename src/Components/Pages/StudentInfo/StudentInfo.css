@@ -1,23 +1,36 @@
-.profile {
+.widgets {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
-  background-color: lightblue;
-  min-width: 500px;
-  min-height: 200px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+}
 
+.profile {
+  background-color: lightblue;
+  min-width: 500px;
+  min-height: 200px;
   transition: 800ms;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts {
+  background-color: #c29e9e;
+  min-width: 500px;
+  min-height: 100px;
+  margin: 5px;
 }
 
 .profile.editable {
   min-width: 500px;
-  min-height: 300px;
+  min-height: 250px;
   transition: 0ms;
 }
 
@@ -26,13 +39,27 @@
   background: none;
   outline: none;
   position: absolute;
-  bottom: 8px;
+  bottom: 115px;
+  left: 16px;
+  padding: 0px 5px 7px 0px;
+}
+
+.cancelButton {
+  border: none;
+  background: none;
+  outline: none;
+  position: absolute;
+  top: 16px;
   right: 16px;
   padding: 0px 5px 7px 0px;
 }
 
 .updateButton:hover {
-  color: green;
+  color: blue;
+}
+
+.cancelButton:hover {
+  color: red;
 }
 
 .studentName {
@@ -44,13 +71,54 @@
   padding: 30px;
 }
 
+.emailAndID.disclaimerBelow {
+  padding: 30px 30px 4px 30px;
+}
+
 .updateDisclaimer {
-  position: absolute;
-  bottom: 22px;
-  left: 30px;
+  position: relative;
+  left: 16px;
+  line-height: 10px;
+  padding: 0px 0px 30px 0px;
 }
 
 .passwordForm {
-  margin: 0px 0px 5px 75px;
+  margin: 0px 0px 5px 0px;
   max-width: 350px;
 }
+
+.alert {
+  color: red;
+
+  /* animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px; */
+}
+
+.confirmation {
+  color: green;
+}
+
+/* @keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+} */
