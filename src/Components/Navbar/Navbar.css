@@ -79,8 +79,7 @@ span {
 }
 
 .searchbar {
-  position: fixed;
-  left: 15%;
+  margin: 15px;
 }
 
 input[type="text"] {
