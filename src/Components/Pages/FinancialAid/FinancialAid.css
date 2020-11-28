@@ -26,24 +26,29 @@
   font-size: 50%;
   color: black;
   position: fixed;
-  left: 35%;
-  top: 25%;
+  left: 25%;
+  top: 21%;
   border-radius: 25px;
 }
 
-.docUpload {
+.docUpload:link {
   font-size: 70%;
   font-weight: bold;
   text-align: center;
-  padding: 25px 0px;
+  padding: 35px 0px;
   color: royalblue;
   background-color: lightgray;
   border-radius: 25px;
+  text-decoration: none;
   position: fixed;
   height: 100px;
   width: 500px;
   top: 23%;
   left: 73.5%;
+}
+
+.docUpload:visited {
+  color: royalblue;
 }
 
 .award {
@@ -60,10 +65,20 @@
   height: 250px;
 }
 
-.fullaccount {
+.fullaccount:link {
   font-size: 60%;
-  top: 60%;
-  vertical-align: -100px;
+  vertical-align: -40px;
+  text-decoration: none;
+  text-align: right;
+  padding-left: 120px;
+}
+
+.fullaccount:hover {
+  text-decoration: underline;
+}
+
+.fullaccount:visited {
+  color: royalblue;
 }
 
 .standing {
@@ -104,8 +119,8 @@
   padding: 10px 5px;
   border-radius: 25px;
   font-size: 50%;
-  width: 450px;
-  height: 250px;
+  width: 350px;
+  height: 275px;
 }
 
 .table {
@@ -113,4 +128,11 @@
   border-spacing: 30px;
   border-collapse: separate;
   text-align: center;
+}
+
+.entry {
+  text-align: center;
+  font-size: 120%;
+  font-weight: bold;
+  color: black;
 }
