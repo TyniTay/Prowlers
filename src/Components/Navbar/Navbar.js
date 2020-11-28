@@ -44,10 +44,4 @@ function Navbar() {
 
 function SearchBar(){return (<p className='searchbar'> <input type="text" placeholder="Search"/></p>);}
 
-// function user(){
-//     return(
-
-//     );
-// }
-
 export default Navbar
