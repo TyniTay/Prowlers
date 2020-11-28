@@ -17,6 +17,10 @@
   background: none;
 }
 
+.searchbar {
+  margin: 15px;
+}
+
 .nav-menu {
   z-index: 1;
   background-color: #060b26;
@@ -76,10 +80,6 @@
 
 span {
   margin-left: 16px;
-}
-
-.searchbar {
-  margin: 15px;
 }
 
 input[type="text"] {

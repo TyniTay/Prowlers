@@ -18,6 +18,7 @@ function Navbar() {
                     <RiIcons.RiMenuLine onClick={showSidebar}/>
                 </Link>
                 {SearchBar()}
+                <h1>PAGE TITLE</h1>
             </div>
             <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
                 <ul className='nav-menu-items' onClick={showSidebar}>
