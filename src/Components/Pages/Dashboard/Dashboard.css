@@ -3,7 +3,7 @@ body {
 }
 
 
-h1 {
+div.welcomeMessage h1, div.resourceSection h1 {
     /* Layout Properties */
     padding-left: 5%;
     padding-bottom: 30px;
@@ -16,11 +16,10 @@ h1 {
     line-height: 48px;
 }
 
-h2 {
+div.welcomeMessage h2 {
     /* Layout Properties */
     padding-left: 5%;;
     padding-top: 30px;
-   
 
     /* Content UI */
     color: #3E2E2E;
@@ -47,9 +46,6 @@ div.welcomeMessage h1 {
     top: 100px;
     right: 5%;
     margin-left: 700px;
-    
-    
-    
 
     color:#878B8E;
     font-family: 'Roboto', sans-serif;
@@ -75,7 +71,6 @@ div.welcomeMessage h1 {
     width: 560px;
     height: 60px;
     margin-bottom: 10px;
-    
 
     /* UI Properties */
     background: #ffffff 0% 0% no-repeat padding-box;
@@ -91,7 +86,7 @@ div.welcomeMessage h1 {
     line-height: 24px;
 }
 
-h4 {
+div.recentUpdates h4, div.coursePreview h4, div.resourceSection h4 {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     color: #0076A3;
@@ -221,6 +216,9 @@ section.card3 Button {
     font-size: 14px;
 }
 
+
+/* Paneling Colors for Blocks 
+ * -------------------------------------------------------------*/
 .blue {
     background: #63BAF5;
 }
