@@ -1,6 +1,7 @@
 /* all code copied from Brian Design @https://www.youtube.com/watch?v=CXa0f4-dWi4 */
 
 .navbar {
+  z-index: 1;
   background-color: #060b26;
   height: 80px;
   width: 100%;
