@@ -31,8 +31,22 @@
   padding: 0px 5px 7px 0px;
 }
 
+.cancelButton {
+  border: none;
+  background: none;
+  outline: none;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 0px 5px 7px 0px;
+}
+
 .updateButton:hover {
   color: blue;
+}
+
+.cancelButton:hover {
+  color: red;
 }
 
 .studentName {

@@ -46,6 +46,14 @@ const StudentInfo = () => {
         }
     }
 
+    const handleCancelUpdate = () => {
+        setUpdatingInfo(false)
+        setName(getUsername())
+        setChangeEntry("")
+        setConfirmEntry("")
+        setPasswordMessage("")
+    }
+
     const handleKeypress = (e) => {
         var elementID = document.activeElement.id
         if (e.keyCode === 13) {
@@ -90,13 +98,12 @@ const StudentInfo = () => {
         )
     }      
 
-    if (updatingInfo) {
+    if (updatingInfo) {        
         return(
             <div className="profile editable">
                 <form className="studentName">
                     <input
                         className = "studentName"
-
                         id = "nameID"
                         type = "text"
                         value = {name}
@@ -114,7 +121,11 @@ const StudentInfo = () => {
                 <h6 className="updateDisclaimer" style={{color: '#454545', textIndent: '2px'}}>
                     Contact administration to update your email and legal name
                 </h6>
-
+                <IconContext.Provider value={{size: '2em'}}>
+                    <button className = "cancelButton" onClick={handleCancelUpdate}>
+                        <RiIcons.RiCloseFill/>
+                    </button>
+                </IconContext.Provider>
                 <IconContext.Provider value={{size: '2em'}}>
                     <button className = "updateButton" onClick={handleConfirmInfo}>
                         <RiIcons.RiLockUnlockFill/>
@@ -125,11 +136,8 @@ const StudentInfo = () => {
     }
     return (
         <div className="profile">
-            {/* <div className="profileImage">
-                <img style={{display:'inline-block'}} src={profileImage} alt="loading" width="100px" height="100px"></img>
-            </div> */}
             <div className ="studentName">
-                <h2>{name}</h2>
+                <h2>{getUsername()}</h2>
                 {legalName()}
             </div>
                 {emailAndID("emailAndID")}
