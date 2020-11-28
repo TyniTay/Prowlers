@@ -12,6 +12,11 @@
     "react-dom": "^17.0.1",
     "react-dropdown": "^1.9.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    "react-icons": "^4.1.0",
+    "react-router-dom": "^5.2.0",
+>>>>>>> 185a25345d9d45ee7615853fac7e25c8b808d6a5
 =======
     "react-icons": "^4.1.0",
     "react-router-dom": "^5.2.0",
