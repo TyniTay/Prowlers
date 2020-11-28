@@ -83,6 +83,7 @@
 
 .standing {
   position: fixed;
+  z-index: -100;
   top: 40%;
   left: 590px;
   background-color: lightgray;
