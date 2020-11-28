@@ -27,10 +27,10 @@
   font-size: 50%;
   z-index: -1000;
   color: black;
-  position: fixed;
-  left: 500px;
-  top: 195px;
-  width: 300px;
+  position: absolute;
+  top: 15px;
+  left: 300px;
+  width: 250px;
   vertical-align: 300px;
   border-radius: 25px;
 }
