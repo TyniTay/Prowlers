@@ -30,11 +30,9 @@ const FinancialAid = props => {
     return(
         <div className='financePage'>
             Financial Aid
-            <h1 className='yearSelect'>
-                Financial Aid Status:
-            </h1>
-
-            {dropDown()}
+            <body className='yearSelect'>
+                Financial Aid Status: {dropDown()}
+            </body>
             {docUpload()}
 
             <p className='award'>
@@ -42,21 +40,23 @@ const FinancialAid = props => {
                 <br/>
                 <br/>
                 <br/>
-                $XXXXXX
+                <p className="entry">$XXXXXX</p>
+                <br/>
                 <a className = "fullaccount" 
                 href="https://banner-web.lmu.edu:8080/pls/pbanr/bwskoacc.P_ViewAcct" 
-                target="_blank">View full account numbers
+                target="_blank">View full account numbers -{">"}
                 </a> 
             </p>
 
             
             <p className="standing">
                 Academic Standing<br/><br/><br/>
-                Good
+                <p className="entry">Good</p>
             </p>
 
             <p className="holds">
-                Holds<br/><br/><br/>No Holds at this time
+                Holds<br/><br/><br/>
+                <p className="entry">No Holds at this time</p>
             </p>
             <p className='payment'>
                 Award Payment Schedule

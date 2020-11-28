@@ -1,8 +1,11 @@
 /* all code copied from Brian Design @https://www.youtube.com/watch?v=CXa0f4-dWi4 */
 
 .navbar {
+  z-index: 1;
   background-color: #060b26;
   height: 80px;
+  width: 100%;
+  position: fixed;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -15,18 +18,20 @@
 }
 
 .nav-menu {
+  z-index: 1;
   background-color: #060b26;
   width: 250px;
   height: 100vh;
   display: flex;
-  justify-content: center;
   position: fixed;
+  justify-content: center;
   top: 0;
   left: -100%;
   transition: 850ms;
 }
 
 .nav-menu.active {
+  display: flex;
   left: 0;
   transition: 350ms;
 }
@@ -71,4 +76,25 @@
 
 span {
   margin-left: 16px;
+}
+
+.searchbar {
+  position: fixed;
+  left: 15%;
+}
+
+input[type="text"] {
+  width: 100%;
+  font-size: 16px;
+  background-color: white;
+  border-radius: 25px;
+  padding: 12px 20px 12px 40px;
+}
+
+input:focus {
+  outline-width: 0px;
+}
+
+img {
+  border-radius: "20%";
 }

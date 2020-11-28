@@ -14,6 +14,7 @@ function Navbar() {
     return (
         <IconContext.Provider value={{color: '#fff'}}>
             <div className="navbar">
+                {SearchBar()}
                 <Link to="#" className='menu-bars'>
                     <RiIcons.RiMenuLine onClick={showSidebar}/>
                 </Link>
@@ -40,5 +41,7 @@ function Navbar() {
         </IconContext.Provider>
     )
 }
+
+function SearchBar(){return (<p className='searchbar'> <input type="text" placeholder="Search"/></p>);}
 
 export default Navbar
