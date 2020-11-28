@@ -32,10 +32,11 @@ h2 {
 
 .dateTime {
     /* Layout Properties */
-    position: absolute;
-    right: 5%;
-    top: 120px;
-    padding: 10px;
+    position: relative;
+    top: -155px; left: 40px;
+    margin-left: 760px;
+    
+    
 
     color:#878B8E;
     font-family: 'Roboto', sans-serif;
