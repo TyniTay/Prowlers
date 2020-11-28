@@ -20,7 +20,7 @@ h2 {
     /* Layout Properties */
     padding-left: 5%;;
     padding-top: 30px;
-    padding-bottom: 30px;
+   
 
     /* Content UI */
     color: #3E2E2E;
@@ -30,11 +30,24 @@ h2 {
     line-height: 36px;
 }
 
+div.welcomeMessage h2 {
+    position: relative;
+    top: 55px;
+}
+
+div.welcomeMessage h1 {
+    position: relative;
+    top: 55px;
+    margin-bottom: 50px;
+}
+
 .dateTime {
     /* Layout Properties */
-    position: relative;
-    top: -155px; left: 40px;
-    margin-left: 760px;
+    position: absolute;
+    top: 100px;
+    right: 5%;
+    margin-left: 700px;
+    
     
     
 
