@@ -28,6 +28,7 @@
 }
 
 .nav-menu.active {
+  display: flex;
   left: 0;
   transition: 350ms;
 }
@@ -83,7 +84,6 @@ input[type="text"] {
   width: 100%;
   font-size: 16px;
   background-color: white;
-  color: lightgray;
   border-radius: 25px;
   padding: 12px 20px 12px 40px;
 }
