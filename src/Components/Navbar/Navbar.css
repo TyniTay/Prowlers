@@ -73,3 +73,25 @@
 span {
   margin-left: 16px;
 }
+
+.searchbar {
+  position: fixed;
+  left: 15%;
+}
+
+input[type="text"] {
+  width: 100%;
+  font-size: 16px;
+  background-color: white;
+  color: lightgray;
+  border-radius: 25px;
+  padding: 12px 20px 12px 40px;
+}
+
+input:focus {
+  outline-width: 0px;
+}
+
+img {
+  border-radius: "20%";
+}
