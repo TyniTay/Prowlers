@@ -1,8 +1,10 @@
 .financePage {
-  z-index: -100;
+  width: 100%;
+  height: 100%;
+  z-index: -1000;
   color: darkgray;
   font-size: 300%;
-  position: fixed;
+  position: center absolute;
   top: 10%;
   left: 5%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
