@@ -1,15 +1,107 @@
 import React from 'react'
-import {getUsername} from "../../../Data";
+import './Dashboard.css'
+import { getUsername } from "../../../Data";
 import Profile from '../StudentInfo/StudentInfo'
 import FinancialAid from '../FinancialAid/FinancialAid'
 import Registration from '../Registration/Registration'
+import { Button } from '@material-ui/core';
 
 const Dashboard = () => {
-    return(
-        <div>
-            {"Welcome to Your Dashboard, "+getUsername()+"!"}
+return (
+<html>
+
+<body>
+    {/* Title of the page w/ welcome message to getUsername
+    * Time and date at the right hand corner */}
+    <div className="welcomeMessage">
+        <h2> Dashboard </h2>
+        <br></br>
+        <h1> {"Welcome, " + getUsername() + "."} </h1>
         </div>
-    )
+        <div className="dateTime">
+            12:00PM, Tuesday, December 1, 2020
+        </div>
+
+        {/* Updates Section 
+          * ------------------------------------------------------*/}
+        <div className="recentUpdates">
+            <h4> Recent Updates </h4>
+            <section className="card">
+                <text> Registration date for Spring 2021 has been updated. </text>
+            </section>
+
+            <section className="card">
+                <text> Your Reports have been updated for Fall 2020. </text>
+            </section>
+        </div>
+        {/* Courses Block Section 
+          * ------------------------------------------------------*/}
+        <div className="coursePreview">
+            <h4> Courses </h4>
+            <section className="cardL + blue">
+                <h6 className="courseTitle"> First-Year Seminar </h6>
+                <a> Preparing For Mars </a>
+            <a className="time"> 1:30PM </a>
+            <a className="days"> T T </a>
+            <p className="subtext"> 4 Credits </p>
+        </section>
+
+        <section className="cardL + orange">
+            <h6 className="courseTitle"> Theological Inquiry </h6>
+            <a> Jesus, God, and The Holy Spirit </a>
+            <a className="time"> 4:00PM </a>
+            <a className="days"> M W F </a>
+            <p className="subtext"> 4 Credits </p>
+        </section>
+
+        <section className="cardL + purple">
+            <h6 className="courseTitle"> Economics </h6>
+            <a> Introduction to Economics </a>
+            <a className="time"> 11:30AM </a>
+            <a className="days"> M W F </a>
+            <p className="subtext"> 4 Credits </p>
+        </section>
+
+        <section className="cardL + green">
+            <h6 className="courseTitle"> Mathematics </h6>
+            <a> Business Calculus I</a>
+            <a className="time"> 10:00AM </a>
+            <a className="days"> T T </a>
+            <p className="subtext"> 4 Credits </p>
+        </section>
+    </div>
+
+     {/* Resources Panels 
+       * ------------------------------------------------------*/}
+    <div className="resourceSection">
+        <h4> Resources </h4>
+        <section className="card3">
+        <h1> LibGuides </h1>
+        <Button> Go </Button>
+        </section>
+
+        <section className="card3">
+        <h1> Degree Works </h1>
+        <Button> Go </Button>
+        </section>
+
+        <section className="card3">
+        <h1> Brightspace </h1>
+        <Button> Go </Button>
+        </section>
+
+        <section className="card3">
+        <h1> Student Account Center </h1>
+        <Button> Go </Button>
+        </section>
+    </div>
+
+
+</body>
+
+</html>
+
+)
 }
 
 export default Dashboard
