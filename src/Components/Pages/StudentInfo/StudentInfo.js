@@ -5,11 +5,11 @@ import profileImage from "../../../Assets/noprofilepic.png";
 import {getUsername, setUsername} from "../../../Data";
 import './StudentInfo.css'
 
-function emailAndID() {
+function emailAndID(className) {
     return(
-         <div className ="emailAndID">
-                    <h3>University ID: 555555555</h3>
-                    <h3>Email: jjohn@lion.lmu.edu</h3>
+         <div className = {className}>
+            <h3>University ID: 555555555</h3>
+            <h3>Email: jjohn@lion.lmu.edu</h3>
         </div>
     )
 }
@@ -20,10 +20,9 @@ function legalName() {
     )
 }
 
-const StudentInfo = (props) => {
+const StudentInfo = () => {
     const [updatingInfo, setUpdatingInfo] = useState(false)
     const [name, setName] = useState(getUsername())
-
     const [changeEntry, setChangeEntry] = useState("")
     const [confirmEntry, setConfirmEntry] = useState("")
     const [passwordMessage, setPasswordMessage] = useState("")
@@ -111,10 +110,11 @@ const StudentInfo = (props) => {
                 {passwordForm("changePasswordID", "change password", setChangeEntry)}
                 {passwordForm("confirmPasswordID", "confirm password", setConfirmEntry)}
                 <h4 className = {messageType}>{passwordMessage}</h4>
-                {emailAndID()}
+                {emailAndID("emailAndID disclaimerBelow")}
                 <h6 className="updateDisclaimer" style={{color: '#454545', textIndent: '2px'}}>
                     Contact administration to update your email and legal name
                 </h6>
+
                 <IconContext.Provider value={{size: '2em'}}>
                     <button className = "updateButton" onClick={handleConfirmInfo}>
                         <RiIcons.RiLockUnlockFill/>
@@ -132,7 +132,7 @@ const StudentInfo = (props) => {
                 <h2>{name}</h2>
                 {legalName()}
             </div>
-            {emailAndID()}
+                {emailAndID("emailAndID")}
             <IconContext.Provider value={{size: '2em'}}>
                 <button className = "updateButton" onClick={handleUpdateInfo}>
                     <RiIcons.RiLockFill/>
