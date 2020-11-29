@@ -3,7 +3,7 @@ body {
 }
 
 
-div.welcomeMessage h1, div.resourceSection h1 {
+div.welcomeMessage h1 {
     /* Layout Properties */
     padding-left: 5%;
     padding-bottom: 30px;
