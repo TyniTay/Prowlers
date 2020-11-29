@@ -57,28 +57,27 @@
 
 .atext {
   color: #666;
-  line-height: 1.5rem;
-  font-size: 0.875rem;
+  line-height: 21px;
+  font-size: 14px;
+  max-height: 70px;
 }
 
 .button {
-  /* Layout Properties*/
-  position: relative;
-  align-content: center;
-  top: 20px;
-  left: 55px;
-  width: 80px;
-  height: 30px;
-  /* UI Properties */
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  color: white;
-  font-weight: bold;
-  font-size: 12px;
-  letter-spacing: 2px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 6px #12192F3B;
+  border: none;
+  color: #1a1a1a;
   text-align: center;
-  background: #b8b8b8 0% 0% no-repeat padding-box;
-  border-radius: 4px;
-  opacity: 1;
-  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 2px;
+  padding: 10px 24px;
+  position: relative;
+  top: 18px;
+  left: 50px;
+}
+
+.button:hover {
+  background-color: gray;
+  color: white;
 }
