@@ -171,16 +171,30 @@ p.subtext {
 .resourceSection {
   display: inline-block;
   padding-left: 5%;
-  padding-top: 20px;
 }
 
-.card3 {
+.bcontainer {
+  width: 90%;
+  max-width: 960px;
+  display: -webkit-flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.bstyle {
   /* Layout */
-  height: 200px;
-  width: 300px;
+  max-height: 200px;
+  max-width: 300px;
+  min-height: 200px;
+  min-width: 300px;
   margin-bottom: 20px;
+  margin-right: 20px;
   padding: 20px;
-  display: inline-block;
+  display: -webkit-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 
   /* UI Properties */
   background: #0076a3 0% 0% no-repeat padding-box;
@@ -188,35 +202,39 @@ p.subtext {
   opacity: 1;
 }
 
-div.resourceSection section {
-  padding: 20px;
-  margin-right: 20px;
-}
-
-section.card3 h1 {
-  font-size: 16px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  line-height: normal;
-  text-align: center;
-  top: 35px;
+.btext {
   color: white;
-  text-transform: uppercase;
 }
 
-section.card3 Button {
-  color: #ffffff;
-  width: 60;
-  height: 30;
-  background: rgb(231, 231, 231);
-  opacity: 1;
-  text-align: left;
-  display: inline-block;
-  left: 100px;
-  top: 40px;
-  font-weight: bolder;
-  font-size: 14px;
+.btitle {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
 }
+
+.rButton {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 6px #12192f3b;
+  border: none;
+  color: #1a1a1a;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 2px;
+  padding: 10px 24px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+}
+
+.button:hover {
+  background-color: gray;
+  color: white;
+}
+
 
 /* Paneling Colors for Blocks 
  * -------------------------------------------------------------*/
@@ -235,3 +253,10 @@ section.card3 Button {
 .orange {
   background: #fb8540;
 }
+
+/*
+https://lmutpg.lmu.edu/C20995_tsa/web/login.jsp
+    https://brightspace.lmu.edu/d2l/login
+    https://auth.lmu.edu/mysso/redirect/dw.jsp
+    http://libguides.lmu.edu/
+    */
