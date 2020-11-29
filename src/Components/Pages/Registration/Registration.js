@@ -1,47 +1,81 @@
 import React, {useState, useEffect} from 'react'
-//import {Container, Row, Col} from 'react-bootstrap'
+
 import ClassList from '../../../classes.json'
+import KeyClassList from '../../../classesKey.json'
 import Classes from './Classes'
 import UserClasses from './UserClasses'
+import Calendar from './Calendar'
+
 
 const Registration = props => {
     const [availableClasses, setAvailableClasses] = useState(ClassList)
     const [userClasses, setUserClasses] = useState([])
+    const [newClass, setNewClass] = useState()
+    const [updateClass, setUpdateClass] = useState(false)
 
-    function addClass(newClass) {
-        setUserClasses([newClass, ...userClasses])
+    function addClass(toAdd) {
+        setUserClasses([...userClasses, toAdd])
     }
 
-    function handleSubmit(event) {
-        console.log("LOOK HERE: ", event)
-        event.preventDefault()
-        addClass("s")
+    function removeClass(toRemove) {
+        setUserClasses(userClasses =>userClasses.filter(spec => spec.title !== toRemove))
     }
+
+    function addAvailableClasses(toAdd) {
+        setAvailableClasses([...availableClasses, toAdd])
+    }
+
+    function removeAvailableClasses(toRemove) {
+        setAvailableClasses(availableClasses => availableClasses.filter(spec => spec.title !== toRemove))
+    }
+
+    function newButton(newClass) {
+        return(
+            <button className={newClass.title} type="submit">Add Class</button>
+        )
+    }
+    
+    function handleAddSubmit(e) {
+        e.preventDefault()
+        addClass(KeyClassList[e.nativeEvent.submitter.className]);
+        removeAvailableClasses(KeyClassList[e.nativeEvent.submitter.className].title)
+    }
+
+    function handleDeleteSubmit(e) {
+        e.preventDefault()
+        removeClass(KeyClassList[e.nativeEvent.submitter.className].title)
+        addAvailableClasses(KeyClassList[e.nativeEvent.submitter.className])
+    }
+
     return(
         <div>
+                
+            <h1>filler</h1>
             This will be the registration page
-            <form onSubmit={handleSubmit}>
-                {availableClasses.map(spec => (
-                    <div key={spec.title}>
-                        <Classes {...spec}/>
-                    </div>
-                ))}
-            {userClasses.map(userClass => (
-                <div key = {userClass.title}>
-                    <UserClasses {...userClass}/>
-                </div>
+            {availableClasses.map(spec => (
+                <form onSubmit={handleAddSubmit} key = {spec.title}>
+                    <Classes {...spec} />
+                    {newButton(spec)}
+                </form>
+                        
             ))}
-            </form>
-            
+            <h1>Tentative Schedule</h1>
+            {userClasses.map(userClass => (
+                <form onSubmit={handleDeleteSubmit} key = {userClass.title}>
+                    <UserClasses  {...userClass}/>
+                    <button className={userClass.title} type="submit">Delete Class</button>
+                </form>
+            ))}
+            <h1>Calendar</h1>  
+            <Calendar userClasses={userClasses} />
         </div>
     )
 }
-
 export default Registration
 
 /*
 <Classes {...spec}/>
-
+{newButton(spec)}
 
 
 

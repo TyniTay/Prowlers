@@ -1,5 +1,5 @@
-[
-    {
+{
+    "CMSI 185-01" : {
         "name" : "Computer Programming",
         "professor": "Delarem Yazdan Sepas",
         "title" : "CMSI 185-01",
@@ -7,7 +7,7 @@
         "start" : 8,
         "end" : 9
     },
-    {
+    "CMSI 185-02" : {
         "name" : "Computer Programming",
         "professor": "Delarem Yazdan Sepas",
         "title" : "CMSI 185-02",
@@ -15,7 +15,7 @@
         "start" : 10,
         "end" : 11
     },
-    {
+    "CMSI 281" : {
         "name": "Data Structures",
         "professor": "Andrew Forney",
         "title" : "CMSI 281",
@@ -23,7 +23,7 @@
         "start" : 8,
         "end" : 9
     },
-    {
+    "CMSI 282" : {
         "name" : "Algorithms",
         "professor": "Andrew Forney",
         "title" : "CMSI 282",
@@ -31,7 +31,7 @@
         "start" : 8,
         "end" : 9
     },
-    {
+    "CMSI 370" : {
         "name" : "Interaction Design",
         "professor": "Delarem Yazdan Sepas",
         "title" : "CMSI 370",
@@ -39,4 +39,4 @@
         "start" : 8,
         "end" : 9
     }
-]
+}

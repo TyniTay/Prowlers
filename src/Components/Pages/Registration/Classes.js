@@ -1,13 +1,20 @@
 import React, {useState, useEffect} from 'react'
-
+import {newButton} from './Registration'
 const Classes = props => {
-    console.log("CLASSES: ", props)
+    console.log("CLASSES: ", props.props)
+    
+    function handleButton(e) {
+        console.log("this should print")
+    }
+
+    
+
     return(
         <div style={{
             backgroundColor: "lightblue"
         }}
         value = {props}>
-            {props.title}: {props.name}, Professor: {props.professor} <button value={props} type="submit">Add Course</button>
+            {props.title}: {props.name}, Professor: {props.professor}
             
         </div>
     )
