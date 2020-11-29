@@ -19,7 +19,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route path='/' exact component={Dashboard} />
-        <Route path='/dashboard' exact component={StudentInfo} />
+        <Route path='/student-info' exact component={StudentInfo} />
         <Route path='/registration' exact component={Registration} />
         <Route path='/records' exact component={Records} />
         <Route path='/financial aid' exact component={FinancialAid} />
