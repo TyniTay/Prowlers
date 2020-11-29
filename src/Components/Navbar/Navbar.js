@@ -8,7 +8,7 @@ import './Navbar.css'
 import { IconContext } from 'react-icons'
 import {lmuLogo} from '../../lmu.png'
 
-function SearchBar(){return (<p className='searchbar'> <input type="text" placeholder="Search"/></p>);}
+// function SearchBar(){return (<p className='searchbar'> <input type="text" placeholder="Search"/></p>);}
 
 
 function Navbar() {
@@ -16,17 +16,17 @@ function Navbar() {
         
         <IconContext.Provider value={{color: '#fff'}}>
             <div className="navbar">
+                {/* <img>src={lmuLogo}</img> */}
                 {SidebarData.map((item, index) => {
-                        return (
-                            <li key={index} className={item.cName}>
-                                <NavLink exact activeClassName="activeNavLink" className = "navLink" to={item.path}>
-                                    {item.icon}
-                                    <span>{item.title}</span>
-                                </NavLink>
-                            </li>
-                        )
-                    })}
-                 {/* <img>src={lmuLogo}</img> */}
+                    return (
+                        <li key={index} className={item.cName}>
+                            <NavLink exact activeClassName="activeNavLink" className = "navLink" to={item.path}>
+                                {item.icon}
+                                <span>{item.title}</span>
+                            </NavLink>
+                        </li>
+                    )
+                })}
             </div>
         </IconContext.Provider>
     )
