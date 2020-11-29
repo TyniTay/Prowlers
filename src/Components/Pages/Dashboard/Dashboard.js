@@ -85,7 +85,7 @@ return (
 
         <section className="card3">
         <h1> Degree Works </h1>
-        <a href="https://dw.lmu.edu/DashboardServlet/" target="_blank"> 
+        <a href="https://auth.lmu.edu/mysso/redirect/dw.jsp" target="_blank"> 
         <Button> Go </Button>
         </a>
         </section>
