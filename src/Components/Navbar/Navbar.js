@@ -2,46 +2,34 @@
 
 import React, {useState} from 'react'
 import * as RiIcons from "react-icons/ri"
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { SidebarData } from './SidebarData'
 import './Navbar.css'
 import { IconContext } from 'react-icons'
+import {lmuLogo} from '../../lmu.png'
+
+// function SearchBar(){return (<p className='searchbar'> <input type="text" placeholder="Search"/></p>);}
+
 
 function Navbar() {
-    const [sidebar, setSidebar] = useState(false)
-    const showSidebar = () => setSidebar(!sidebar)
-
     return (
+        
         <IconContext.Provider value={{color: '#fff'}}>
             <div className="navbar">
-                {SearchBar()}
-                <Link to="#" className='menu-bars'>
-                    <RiIcons.RiMenuLine onClick={showSidebar}/>
-                </Link>
+                {/* <img>src={lmuLogo}</img> */}
+                {SidebarData.map((item, index) => {
+                    return (
+                        <li key={index} className={item.cName}>
+                            <NavLink exact activeClassName="activeNavLink" className = "navLink" to={item.path}>
+                                <div className = "icon">{item.icon}</div>
+                                <span className = "title">{item.title}</span>
+                            </NavLink>
+                        </li>
+                    )
+                })}
             </div>
-            <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
-                <ul className='nav-menu-items' onClick={showSidebar}>
-                    <li className="navbar-toggle">
-                        <Link to="#" className='menu-bars'>
-                            <RiIcons.RiCloseFill />
-                        </Link>
-                    </li>
-                    {SidebarData.map((item, index) => {
-                        return (
-                            <li key={index} className={item.cName}>
-                                <Link to={item.path}>
-                                    {item.icon}
-                                    <span>{item.title}</span>
-                                </Link>
-                            </li>
-                        )
-                    })}
-                </ul>
-            </nav>
         </IconContext.Provider>
     )
 }
-
-function SearchBar(){return (<p className='searchbar'> <input type="text" placeholder="Search"/></p>);}
 
 export default Navbar

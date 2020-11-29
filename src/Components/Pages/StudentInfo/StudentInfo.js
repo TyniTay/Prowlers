@@ -33,7 +33,9 @@ const StudentInfo = () => {
     }
 
     const handleConfirmInfo = () => {
-        if (changeEntry === confirmEntry) {
+        if (name === "") {
+            setName(getUsername())
+        } else if (changeEntry === confirmEntry) {
             setUpdatingInfo(false)
             setUsername(name)
             setChangeEntry("")
@@ -57,11 +59,7 @@ const StudentInfo = () => {
     const handleKeypress = (e) => {
         var elementID = document.activeElement.id
         if (e.keyCode === 13) {
-            if (elementID === "nameID" && changeEntry === confirmEntry) {
-                handleConfirmInfo();
-            } else {
-                document.getElementById(elementID).blur();
-            }
+            document.getElementById(elementID).blur();
         }
     }
 
@@ -118,6 +116,9 @@ const StudentInfo = () => {
                     {passwordForm("changePasswordID", "change password", setChangeEntry)}
                     {passwordForm("confirmPasswordID", "confirm password", setConfirmEntry)}
                     <h4 className = {messageType}>{passwordMessage}</h4>
+
+                    <button className="submitButton" onClick={handleConfirmInfo}> Submit </button>
+
                     {emailAndID("emailAndID disclaimerBelow")}
                     <h6 className="updateDisclaimer" style={{color: '#454545', textIndent: '2px'}}>
                         Contact administration to update your email and legal name
@@ -127,14 +128,10 @@ const StudentInfo = () => {
                             <RiIcons.RiCloseFill/>
                         </button>
                     </IconContext.Provider>
-                    <IconContext.Provider value={{size: '2em'}}>
-                        <button className = "updateButton" onClick={handleConfirmInfo}>
-                            <RiIcons.RiLockUnlockFill/>
-                        </button>
-                    </IconContext.Provider>
+                    
                 </div>
                 <div className="contacts">
-                    <h4 style={{padding: "10px 10px 10px 20px", color: "grey"}}>
+                    <h4 style={{padding: "10px 10px 10px 20px", color: "#d9d9d9"}}>
                         the emergency contacts widget is unimplemented
                     </h4>
                 </div>
@@ -150,13 +147,13 @@ const StudentInfo = () => {
                 </div>
                     {emailAndID("emailAndID")}
                 <IconContext.Provider value={{size: '2em'}}>
-                    <button className = "updateButton" onClick={handleUpdateInfo}>
-                        <RiIcons.RiLockFill/>
+                    <button className = "editButton" onClick={handleUpdateInfo}>
+                        <RiIcons.RiMoreFill/>
                     </button>
                 </IconContext.Provider>
             </div>
             <div className="contacts">
-                 <h4 style={{padding: "10px 10px 10px 20px", color: "grey"}}>
+                 <h4 style={{padding: "10px 10px 10px 20px", color: "#d9d9d9"}}>
                         the emergency contacts widget is unimplemented
                 </h4>
             </div>

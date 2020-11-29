@@ -28,11 +28,12 @@ function docUpload(){
 
 const FinancialAid = props => {
     return(
-        <div className='financePage'>
+        <body className='financePage'>
             Financial Aid
-            <body className='yearSelect'>
+            
+            <p className='yearSelect'>
                 Financial Aid Status: {dropDown()}
-            </body>
+            </p>
             
             {docUpload()}
 
@@ -49,7 +50,6 @@ const FinancialAid = props => {
                 </a> 
             </p>
 
-            
             <p className="standing">
                 Academic Standing<br/><br/><br/>
                 <p className="entry">Good</p>
@@ -59,6 +59,7 @@ const FinancialAid = props => {
                 Holds<br/><br/><br/>
                 <p className="entry">No Holds at this time</p>
             </p>
+
             <p className='payment'>
                 Award Payment Schedule
                 <table className="table">
@@ -68,7 +69,8 @@ const FinancialAid = props => {
                 <tr> <td> X </td> <td> xx/xx/xx </td> <td>X</td>  </tr> 
                 </table> 
             </p>
-        </div>
+        </body>
+        
     )
 }
 
