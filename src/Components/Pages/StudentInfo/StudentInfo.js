@@ -118,10 +118,10 @@ const StudentInfo = () => {
                     </form>
                     {passwordForm("changePasswordID", "change password", setChangeEntry)}
                     {passwordForm("confirmPasswordID", "confirm password", setConfirmEntry)}
-                    <a href="https://lmutpg.lmu.edu/C20995_tsa/web/login.jsp" target="_blank"> 
-                        <button className="button"> View </button>
-                    </a>
                     <h4 className = {messageType}>{passwordMessage}</h4>
+
+                    <button className="submitButton" onClick={handleConfirmInfo}> Submit </button>
+
                     {emailAndID("emailAndID disclaimerBelow")}
                     <h6 className="updateDisclaimer" style={{color: '#454545', textIndent: '2px'}}>
                         Contact administration to update your email and legal name
@@ -131,11 +131,7 @@ const StudentInfo = () => {
                             <RiIcons.RiCloseFill/>
                         </button>
                     </IconContext.Provider>
-                    <IconContext.Provider value={{size: '2em'}}>
-                        <button className = "updateButton" onClick={handleConfirmInfo}>
-                            <RiIcons.RiLockUnlockFill/>
-                        </button>
-                    </IconContext.Provider>
+                    
                 </div>
                 <div className="contacts">
                     <h4 style={{padding: "10px 10px 10px 20px", color: "#d9d9d9"}}>
@@ -154,8 +150,8 @@ const StudentInfo = () => {
                 </div>
                     {emailAndID("emailAndID")}
                 <IconContext.Provider value={{size: '2em'}}>
-                    <button className = "updateButton" onClick={handleUpdateInfo}>
-                        <RiIcons.RiLockFill/>
+                    <button className = "editButton" onClick={handleUpdateInfo}>
+                        <RiIcons.RiMoreFill/>
                     </button>
                 </IconContext.Provider>
             </div>

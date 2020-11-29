@@ -36,28 +36,46 @@
   transition: 0ms;
 }
 
-.updateButton {
+.submitButton {
+  background-color: #dcffd1;
+  box-shadow: 0px 2px 6px #12192f3b;
+  border: none;
+  color: #6d6d6d;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 2px;
+  padding: 10px 24px;
+  margin: 15px;
+}
+
+.submitButton:hover {
+  background-color: #69d171;
+  color: green;
+}
+
+.editButton {
+  color: grey;
   border: none;
   background: none;
   outline: none;
   position: absolute;
-  bottom: 115px;
-  left: 16px;
-  padding: 0px 5px 7px 0px;
+  top: 8px;
+  left: 15px;
+}
+
+.editButton:hover {
+  color: white;
 }
 
 .cancelButton {
+  color: grey;
   border: none;
   background: none;
   outline: none;
   position: absolute;
-  top: 16px;
-  right: 16px;
-  padding: 0px 5px 7px 0px;
-}
-
-.updateButton:hover {
-  color: blue;
+  top: 10px;
+  left: 10px;
 }
 
 .cancelButton:hover {
@@ -65,7 +83,7 @@
 }
 
 .studentName {
-  padding: 30px;
+  padding: 30px 30px 10px 30px;
 }
 
 .emailAndID {
@@ -91,8 +109,10 @@
 
 .alert {
   color: red;
+  padding-bottom: 5px;
 }
 
 .confirmation {
   color: green;
+  padding-bottom: 5px;
 }
