@@ -11,7 +11,7 @@ return (
 
 <body>
 <div className="container">
-    <section className="astyle">
+    <section className="astyle + blue">
     <div className="column">
         <h2 className="atitle">Student Account Center</h2>
         <p className="atext">Manage tuiton balances and payment plan options.</p>
@@ -21,7 +21,7 @@ return (
     </a>
     </section>
 
-    <section className="astyle">
+    <section className="astyle + purple">
     <div className="column">
         <h2 className="atitle">Degree Works</h2>
         <p className="atext">Check your Degree Audit and check your gradutation status.</p>
@@ -31,7 +31,7 @@ return (
     </a>
     </section>
 
-    <section className="astyle">
+    <section className="astyle + green">
     <div className="column">
         <h2 className="atitle">Brightspace</h2>
         <p className="atext">Keep up with updates for current courses exams, grades, homework, and more.</p>
@@ -41,7 +41,7 @@ return (
     </a>
     </section>
 
-    <section className="astyle">
+    <section className="astyle + orange">
     <div className="column">
         <h2 className="atitle">LibGuides</h2>
         <p className="atext">Full list of Databases accessible through the library.</p>
@@ -51,7 +51,7 @@ return (
     </a>
     </section>
 
-    <section className="astyle">
+    <section className="astyle + teal">
     <div className="column">
         <h2 className="atitle">LMU Park Account</h2>
         <p className="atext">Update your parking information or pay parking fines.</p>
@@ -61,7 +61,7 @@ return (
     </a>
     </section>
 
-    <section className="astyle">
+    <section className="astyle + red">
     <div className="column">
         <h2 className="atitle"> DSS Online Portal </h2>
         <p className="atext">Apply or manage your accommodations.</p>
