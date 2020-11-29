@@ -1,29 +1,111 @@
-.resources {
-  position: fixed;
-  left: 40%;
-  top: 20%;
-  z-index: -1;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+.body {
+  padding: 30px;
+  font-family: "Open Sans", sans-serif;
+  margin: 50px;
 }
 
-.resource {
-  width: 200px;
-  height: 100px;
-  line-height: 90px;
-  text-decoration: none;
+.container {
+  /* Layout Properties */
+  display: -webkit-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  top: 150px;
+}
+
+.column {
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.astyle {
+  background: #ffffff;
   margin: 10px;
-
-  background-color: #eeeeee;
-  color: #333333;
-
-  border-top: 1px solid #cccccc;
-  border-right: 1px solid #333333;
-  border-bottom: 1px solid #333333;
-  border-left: 1px solid #cccccc;
+  padding: 0 20px;
+  border-radius: 2px;
+  box-shadow: 0px 3px 6px #00000029;
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 200px;
+  max-height: 200px;
+  position: relative;
 }
 
-.resource:hover {
-  background-color: #68c3ed !important;
+.atitle {
+  margin: 0 0 10px;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.75rem;
+}
+
+
+.aresource {
+  display: inline-block;
+  padding: 8px 10px;
+  margin: 0 0 10px;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.075rem;
+  text-transform: uppercase;
+}
+
+.atext {
+  color: white;
+  line-height: 21px;
+  font-size: 14px;
+  max-height: 70px;
+}
+
+.viewButton {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 6px #12192f3b;
+  border: none;
+  color: #1a1a1a;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 2px;
+  padding: 10px 24px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+}
+
+.viewButton:hover {
+  background-color: lightgray;
+  color: white;
+}
+
+
+.blue {
+  background: #63baf5;
+}
+
+.purple {
+  background: #bf89fe;
+}
+
+.green {
+  background: #75d862;
+}
+
+.orange {
+  background: #fb8540;
+}
+
+.teal {
+  background: lightseagreen;
+}
+
+.red {
+  background: lightcoral;
 }

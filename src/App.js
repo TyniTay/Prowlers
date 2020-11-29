@@ -18,11 +18,11 @@ function App() {
     <Router>
       <Navbar />
       <Switch>
-        <Route path='/' exact component={StudentInfo} />
-        <Route path='/dashboard' exact component={Dashboard} />
+        <Route path='/' exact component={Dashboard} />
+        <Route path='/student-info' exact component={StudentInfo} />
         <Route path='/registration' exact component={Registration} />
         <Route path='/records' exact component={Records} />
-        <Route path='/financial aid' exact component={FinancialAid} />
+        <Route path='/financial-aid' exact component={FinancialAid} />
         <Route path='/resources' exact component={Resources} />
       </Switch>
     </Router>

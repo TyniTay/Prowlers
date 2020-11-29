@@ -4,18 +4,19 @@ import React from 'react'
 import * as RiIcons from "react-icons/ri"
 
 export const SidebarData = [
-      {
-        title: 'STUDENT INFO',
-        path: '/',
-        icon: <RiIcons.RiUser2Fill/>,
-        cName: 'nav-text'
-    },
     {
         title: 'DASHBOARD',
-        path: '/dashboard',
+        path: '/',
         icon: <RiIcons.RiDashboardFill/>,
         cName: 'nav-text'
     },
+      {
+        title: 'STUDENT INFO',
+        path: '/student-info',
+        icon: <RiIcons.RiUser2Fill/>,
+        cName: 'nav-text'
+    },
+    
     {
         title: 'REGISTRATION',
         path: '/registration',
@@ -30,7 +31,7 @@ export const SidebarData = [
     },
     {
         title: 'FINANCIAL AID',
-        path: '/financial aid',
+        path: '/financial-aid',
         icon: <RiIcons.RiMoneyDollarCircleFill/>,
         cName: 'nav-text'
     },
