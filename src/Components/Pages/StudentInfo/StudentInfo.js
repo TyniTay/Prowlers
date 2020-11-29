@@ -33,6 +33,11 @@ const StudentInfo = () => {
     }
 
     const handleConfirmInfo = () => {
+        if (name === "") {
+            console.log("GET USERNAME: "+getUsername())
+            setName(getUsername())
+            console.log("NAME: "+name)
+        }
         if (changeEntry === confirmEntry) {
             setUpdatingInfo(false)
             setUsername(name)
@@ -57,11 +62,7 @@ const StudentInfo = () => {
     const handleKeypress = (e) => {
         var elementID = document.activeElement.id
         if (e.keyCode === 13) {
-            if (elementID === "nameID" && changeEntry === confirmEntry) {
-                handleConfirmInfo();
-            } else {
-                document.getElementById(elementID).blur();
-            }
+            document.getElementById(elementID).blur();
         }
     }
 
@@ -134,7 +135,7 @@ const StudentInfo = () => {
                     </IconContext.Provider>
                 </div>
                 <div className="contacts">
-                    <h4 style={{padding: "10px 10px 10px 20px", color: "grey"}}>
+                    <h4 style={{padding: "10px 10px 10px 20px", color: "#d9d9d9"}}>
                         the emergency contacts widget is unimplemented
                     </h4>
                 </div>
@@ -156,7 +157,7 @@ const StudentInfo = () => {
                 </IconContext.Provider>
             </div>
             <div className="contacts">
-                 <h4 style={{padding: "10px 10px 10px 20px", color: "grey"}}>
+                 <h4 style={{padding: "10px 10px 10px 20px", color: "#d9d9d9"}}>
                         the emergency contacts widget is unimplemented
                 </h4>
             </div>
