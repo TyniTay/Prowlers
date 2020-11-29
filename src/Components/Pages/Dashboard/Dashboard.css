@@ -1,5 +1,5 @@
 body {
-    background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 
@@ -21,23 +21,23 @@ div.welcomeMessage h2 {
     padding-left: 5%;;
     padding-top: 30px;
 
-    /* Content UI */
-    color: #3E2E2E;
-    font-family: 'Open Sans';
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 36px;
+  /* Content UI */
+  color: #3e2e2e;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 36px;
 }
 
 div.welcomeMessage h2 {
-    position: relative;
-    top: 55px;
+  position: relative;
+  top: 55px;
 }
 
 div.welcomeMessage h1 {
-    position: relative;
-    top: 55px;
-    margin-bottom: 50px;
+  position: relative;
+  top: 55px;
+  margin-bottom: 50px;
 }
 
 .dateTime {
@@ -47,22 +47,22 @@ div.welcomeMessage h1 {
     right: 5%;
     margin-left: 700px;
 
-    color:#878B8E;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    line-height: 24px;
+  color: #878b8e;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .p {
-    color: #3E2E2E;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    line-height: 24px;
+  color: #3e2e2e;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .recentUpdates {
-    display: inline-block;
-    padding-left: 5%;
+  display: inline-block;
+  padding-left: 5%;
 }
 
 .card {
@@ -95,142 +95,139 @@ div.recentUpdates h4, div.coursePreview h4, div.resourceSection h4 {
 }
 
 .coursePreview {
-    padding: 100px;
-    padding-left: 5%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  padding: 100px;
+  padding-left: 5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .cardL {
-     /* Layout Properties */
-     max-width: 550px;
-     width: 550px;
-     min-height: 100px;
-     display: inline-block;
-     margin-bottom: 10px;
-     margin-right: 20px;
-     
-     
-     /* UI Properties */
-     background: #0076A3 0% 0% no-repeat padding-box;
-     box-shadow: 0px 2px 6px #00000029;
-     opacity: 1;
- 
-     /* Text Properties */
-     color: #ffffff;
-     text-align: left;
-     padding: 18px 10px;
-     font-family: 'Roboto', sans-serif;
-     font-weight: normal;
-     font-size: 16px;
-     line-height: 24px;
+  /* Layout Properties */
+  max-width: 550px;
+  width: 550px;
+  min-height: 100px;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-right: 20px;
+
+  /* UI Properties */
+  background: #0076a3 0% 0% no-repeat padding-box;
+  box-shadow: 0px 2px 6px #00000029;
+  opacity: 1;
+
+  /* Text Properties */
+  color: #ffffff;
+  text-align: left;
+  padding: 18px 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .courseTitle {
-    font-size: 14px;
-    line-height: 21px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: oblique;
-    padding-left: 20px;
-    text-transform: uppercase;  
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "Roboto", sans-serif;
+  font-weight: oblique;
+  padding-left: 20px;
+  text-transform: uppercase;
 }
 
 a {
-    text-align: left;
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    line-height: 24px;
-    font-weight: bold;;
-    padding-left: 20px;
+  text-align: left;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  line-height: 24px;
+  font-weight: bold;
+  padding-left: 20px;
 }
 
 a.time {
-    text-align: left;
-    font-family: 'Roboto', sans-serif;
-    float: right;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  float: right;
 }
 
 a.days {
-    text-align: left;
-    font-family: 'Roboto', sans-serif;
-    float: right;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  float: right;
 }
 
 p.subtext {
-    text-align: left;
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    line-height: 24px;
-    padding-left: 20px;
+  text-align: left;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  line-height: 24px;
+  padding-left: 20px;
 }
 
 .resourceSection {
-    display: inline-block;
-    padding-left: 5%;
-    padding-top: 20px;
+  display: inline-block;
+  padding-left: 5%;
+  padding-top: 20px;
 }
 
 .card3 {
-    /* Layout */
-    height: 200px;
-    width: 300px;
-    margin-bottom: 20px;
-    padding: 20px;
-    display: inline-block;
+  /* Layout */
+  height: 200px;
+  width: 300px;
+  margin-bottom: 20px;
+  padding: 20px;
+  display: inline-block;
 
-    /* UI Properties */
-    background: #0076A3 0% 0% no-repeat padding-box;
-    box-shadow: 0px 2px 6px #00000029;
-    opacity: 1;
+  /* UI Properties */
+  background: #0076a3 0% 0% no-repeat padding-box;
+  box-shadow: 0px 2px 6px #00000029;
+  opacity: 1;
 }
 
 div.resourceSection section {
-    padding: 20px;
-    margin-right: 20px;
+  padding: 20px;
+  margin-right: 20px;
 }
 
 section.card3 h1 {
-    font-size: 16px;
-    font-family:'Open Sans', sans-serif;
-    font-weight: bold;
-    line-height: normal;
-    text-align: center;
-    top: 35px;
-    color: white;
-    text-transform: uppercase;
-
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  line-height: normal;
+  text-align: center;
+  top: 35px;
+  color: white;
+  text-transform: uppercase;
 }
 
-
 section.card3 Button {
-    color: #ffffff;
-    width: 60;
-    height: 30;
-    background: rgb(231, 231, 231);
-    opacity: 1;
-    text-align: left;
-    display: inline-block;
-    left: 100px;
-    top: 40px;
-    font-weight: bolder;
-    font-size: 14px;
+  color: #ffffff;
+  width: 60;
+  height: 30;
+  background: rgb(231, 231, 231);
+  opacity: 1;
+  text-align: left;
+  display: inline-block;
+  left: 100px;
+  top: 40px;
+  font-weight: bolder;
+  font-size: 14px;
 }
 
 
 /* Paneling Colors for Blocks 
  * -------------------------------------------------------------*/
 .blue {
-    background: #63BAF5;
+  background: #63baf5;
 }
 
 .purple {
-    background: #BF89FE;
+  background: #bf89fe;
 }
 
 .green {
-    background:#75D862;
+  background: #75d862;
 }
 
 .orange {
-    background: #FB8540;
+  background: #fb8540;
 }

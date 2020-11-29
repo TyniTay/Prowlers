@@ -1,5 +1,4 @@
 .financePage {
-  flex-wrap: wrap;
   z-index: -1000;
   color: darkgray;
   font-size: 300%;
@@ -28,9 +27,11 @@
   font-size: 50%;
   z-index: -1000;
   color: black;
-  position: fixed;
-  left: 500px;
-  top: 195px;
+  position: absolute;
+  top: 15px;
+  left: 300px;
+  width: 250px;
+  vertical-align: 300px;
   border-radius: 25px;
 }
 
@@ -137,8 +138,7 @@
 
 .table {
   z-index: -1000;
-  font-size: 60%;
-  border-spacing: 30px;
+  font-size: 50%;
   border-collapse: separate;
   text-align: center;
 }
