@@ -22,7 +22,7 @@ function App() {
         <Route path='/student-info' exact component={StudentInfo} />
         <Route path='/registration' exact component={Registration} />
         <Route path='/records' exact component={Records} />
-        <Route path='/financial aid' exact component={FinancialAid} />
+        <Route path='/financial-aid' exact component={FinancialAid} />
         <Route path='/resources' exact component={Resources} />
       </Switch>
     </Router>
