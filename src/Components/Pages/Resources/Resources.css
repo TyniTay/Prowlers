@@ -7,21 +7,16 @@
 
 .container {
   /* Layout Properties */
-  display: flex;
+  display: -webkit-flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 90%;
   max-width: 960px;
   margin: 0 auto;
-}
-
-.card {
-  width: 280px;
-  display: block;
-  margin: 60px auto;
-  box-shadow: 10px 5px 40px 20px;
-  transition: .25s;
+  position: relative;
+  top: 100px;
+  left: 10px;
 }
 
 .column {
