@@ -169,33 +169,35 @@ p.subtext {
 }
 
 .resourceSection {
-  display: inline-block;
   padding-left: 5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.bcontainer {
-  width: 90%;
-  max-width: 960px;
-  display: -webkit-flex;
-  flex-direction: row;
-  justify-content: space-between;
-  position: relative;
-}
+
 
 .bstyle {
   /* Layout */
+  display: inline-block;
+  margin-right: 20px;
   max-height: 200px;
   max-width: 300px;
   min-height: 200px;
   min-width: 300px;
-  margin-bottom: 20px;
-  margin-right: 20px;
-  padding: 20px;
   position: relative;
   /* UI Properties */
-  background: #0076a3 0% 0% no-repeat padding-box;
+  background-color: #0076a3;
   box-shadow: 0px 2px 6px #00000029;
   opacity: 1;
+  /* Text Properties */
+  color: #ffffff;
+  text-align: left;
+  padding: 18px 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 30px;
 }
 
 .btext {
