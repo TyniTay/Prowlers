@@ -134,7 +134,7 @@ div.recentUpdates h4, div.coursePreview h4, div.resourceSection h4 {
   text-transform: uppercase;
 }
 
-a {
+div.coursePreview a {
   text-align: left;
   font-size: 16px;
   font-family: "Roboto", sans-serif;
