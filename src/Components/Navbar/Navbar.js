@@ -8,6 +8,9 @@ import './Navbar.css'
 import { IconContext } from 'react-icons'
 import {lmuLogo} from '../../lmu.png'
 
+function SearchBar(){return (<p className='searchbar'> <input type="text" placeholder="Search"/></p>);}
+
+
 function Navbar() {
     const [sidebar, setSidebar] = useState(false)
     const showSidebar = () => setSidebar(!sidebar)
@@ -20,7 +23,17 @@ function Navbar() {
                     <RiIcons.RiMenuLine onClick={showSidebar}/>
                 </Link>
                 {SearchBar()}
-                <h1 className='pageTitle'>PAGE TITLE</h1>
+                {SidebarData.map((item, index) => {
+                        return (
+                            <li key={index} className={item.cName}>
+                                <Link to={item.path}>
+                                    {item.icon}
+                                    <span>{item.title}</span>
+                                </Link>
+                            </li>
+                        )
+                    })}
+                {/* <h1 className='pageTitle'>{item.title}</h1> */}
                  {/* <img>src={lmuLogo}</img> */}
             </div>
             <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
@@ -45,7 +58,5 @@ function Navbar() {
         </IconContext.Provider>
     )
 }
-
-function SearchBar(){return (<p className='searchbar'> <input type="text" placeholder="Search"/></p>);}
 
 export default Navbar
