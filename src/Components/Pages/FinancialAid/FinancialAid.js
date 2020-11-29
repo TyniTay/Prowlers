@@ -30,13 +30,14 @@ const FinancialAid = props => {
     return(
         <div className='financePage'>
             Financial Aid
+            
             <body className='yearSelect'>
                 Financial Aid Status: {dropDown()}
             </body>
             
             {docUpload()}
 
-            <p className='award'>
+            <section className='award'>
                 Financial Aid Award:
                 <br/>
                 <br/>
@@ -47,19 +48,19 @@ const FinancialAid = props => {
                 href="https://banner-web.lmu.edu:8080/pls/pbanr/bwskoacc.P_ViewAcct" 
                 target="_blank">View full account numbers -{">"}
                 </a> 
-            </p>
+            </section>
 
-            
-            <p className="standing">
+            <section className="standing">
                 Academic Standing<br/><br/><br/>
                 <p className="entry">Good</p>
-            </p>
+            </section>
 
-            <p className="holds">
+            <section className="holds">
                 Holds<br/><br/><br/>
                 <p className="entry">No Holds at this time</p>
-            </p>
-            <p className='payment'>
+            </section>
+
+            <section className='payment'>
                 Award Payment Schedule
                 <table className="table">
                 <tr> <td> Award   </td> <td> Expected Date </td> <td>      Paid to Date</td> </tr>
@@ -67,7 +68,8 @@ const FinancialAid = props => {
                 <tr> <td> X </td> <td> xx/xx/xx </td> <td>X</td>  </tr> 
                 <tr> <td> X </td> <td> xx/xx/xx </td> <td>X</td>  </tr> 
                 </table> 
-            </p>
+            </section>
+
         </div>
     )
 }
