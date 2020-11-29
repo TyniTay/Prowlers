@@ -20,12 +20,12 @@
 .column {
   flex-basis: percentage(1/3);
   width: percentage(1/3);
-  padding: 0 15px;
+  padding: 15px;
   box-sizing: border-box;
 }
 
 .astyle {
-  background: #FFFFFF;
+  background: #ffffff;
   margin: 10px;
   padding: 0 20px;
   border-radius: 2px;
@@ -42,13 +42,13 @@
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.75rem;
-  }
+}
 
 .aresource {
   display: inline-block;
   padding: 8px 10px;
   margin: 0 0 10px;
-  color: #FFF;
+  color: #fff;
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.075rem;
@@ -62,7 +62,7 @@
 }
 
 .button {
-/* Layout Properties*/
+  /* Layout Properties*/
   position: relative;
   align-content: center;
   top: 20px;
@@ -70,14 +70,14 @@
   width: 80px;
   height: 30px;
   /* UI Properties */
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   color: white;
   font-weight: bold;
   font-size: 12px;
   letter-spacing: 2px;
   text-align: center;
-  background:#B8B8B8 0% 0% no-repeat padding-box;
+  background: #b8b8b8 0% 0% no-repeat padding-box;
   border-radius: 4px;
   opacity: 1;
   cursor: pointer;
