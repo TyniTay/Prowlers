@@ -5,11 +5,13 @@ const CalendarBlock = props => {
 
     // if we have monday wednesday thursday draw 3 of them
     // else if we hhave tuesday thursday\
+    const height = props.start * 20 + 500
     if (props.days === "MWF") {
         return(
             <div>
                 <p style ={{
                     position: 'absolute',
+                    top: height,
                     left: '35px',
                     backgroundColor: "lightgreen"
                 }}>
@@ -17,6 +19,7 @@ const CalendarBlock = props => {
                 </p>
                 <p style ={{
                     position: 'absolute',
+                    top: height,
                     left: '315px',
                     backgroundColor: "lightgreen"
                 }}>
@@ -24,6 +27,7 @@ const CalendarBlock = props => {
                 </p>
                 <p style ={{
                     position: 'absolute',
+                    top: height,
                     left: '600px',
                     backgroundColor: "lightgreen"
                 }}>
@@ -36,7 +40,17 @@ const CalendarBlock = props => {
         return(
             <div>
                 <p style={{
-                    left: '50px',
+                    position: 'absolute',
+                    top: height,
+                    left: '185px',
+                    backgroundColor: "pink"
+                }}>
+                    {props.title}
+                </p>
+                <p style={{
+                    position: 'absolute',
+                    top: height,
+                    left: '475px',
                     backgroundColor: "pink"
                 }}>
                     {props.title}

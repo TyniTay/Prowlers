@@ -14,6 +14,7 @@ const Registration = props => {
     const [updateClass, setUpdateClass] = useState(false)
 
     function addClass(toAdd) {
+        
         setUserClasses([...userClasses, toAdd])
     }
 
@@ -31,12 +32,17 @@ const Registration = props => {
 
     function newButton(newClass) {
         return(
-            <button className={newClass.title} type="submit">Add Class</button>
+            <button style={{display:'inlineFlex'}} className={newClass.title} type="submit">Add Class</button>
         )
     }
     
     function handleAddSubmit(e) {
         e.preventDefault()
+        for(let i=0; i<userClasses.length; i++) {
+            if (userClasses[i].name === KeyClassList[e.nativeEvent.submitter.className].name) {
+                return
+            }
+        }
         addClass(KeyClassList[e.nativeEvent.submitter.className]);
         removeAvailableClasses(KeyClassList[e.nativeEvent.submitter.className].title)
     }
@@ -51,7 +57,8 @@ const Registration = props => {
         <div>
                 
             <h1>filler</h1>
-            This will be the registration page
+            <h2>filler</h2>
+            <h1>Available Courses</h1>
             {availableClasses.map(spec => (
                 <form onSubmit={handleAddSubmit} key = {spec.title}>
                     <Classes {...spec} />

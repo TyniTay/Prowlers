@@ -8,11 +8,11 @@ const Calendar = props => {
     return(
         <div>
             {props.userClasses.map(userClass => (
-                <div key={userClass.title} style={{zIndex: 0}}>
+                <div key={userClass.title} style={{zIndex: -1}}>
                     <CalendarBlock {...userClass} />
                 </div>
             ))}
-            <img alt="loading" style={{position: "absolute"}}src = {calendarImg} ></img>
+            <img alt="loading" style={{top:'1000px',position: "absolute"}}src = {calendarImg} ></img>
             
         </div>
     )

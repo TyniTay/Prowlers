@@ -8,7 +8,7 @@ const UserClasses = props => {
             backgroundColor: "lightyellow"
         }}
         value = {props}>
-            {props.title}: {props.name}, Professor: {props.professor}
+            {props.title}: {props.name}, Professor: {props.professor}, Days: {props.days}, Time: {props.start%12}:00
             
         </div>
     )

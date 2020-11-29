@@ -18,25 +18,49 @@
     {
         "name": "Data Structures",
         "professor": "Andrew Forney",
-        "title" : "CMSI 281",
+        "title" : "CMSI 281-01",
         "days" : "TT",
-        "start" : 8,
-        "end" : 9
+        "start" : 13,
+        "end" : 14
+    },
+    {
+        "name": "Data Structures",
+        "professor": "Andrew Forney",
+        "title" : "CMSI 281-02",
+        "days" : "TT",
+        "start" : 15,
+        "end" : 16
     },
     {
         "name" : "Algorithms",
         "professor": "Andrew Forney",
-        "title" : "CMSI 282",
+        "title" : "CMSI 282-01",
         "days" : "MWF",
-        "start" : 8,
-        "end" : 9
+        "start" : 13,
+        "end" : 14
+    },
+    {
+        "name" : "Algorithms",
+        "professor": "Andrew Forney",
+        "title" : "CMSI 282-02",
+        "days" : "MWF",
+        "start" : 15,
+        "end" : 16
     },
     {
         "name" : "Interaction Design",
         "professor": "Delarem Yazdan Sepas",
-        "title" : "CMSI 370",
+        "title" : "CMSI 370-01",
         "days" : "TT",
-        "start" : 8,
-        "end" : 9
+        "start" : 11,
+        "end" : 12
+    },
+    {
+        "name" : "Interaction Design",
+        "professor": "Delarem Yazdan Sepas",
+        "title" : "CMSI 370-02",
+        "days" : "TT",
+        "start" : 13,
+        "end" : 14
     }
 ]
