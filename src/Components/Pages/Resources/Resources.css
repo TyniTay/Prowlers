@@ -1,29 +1,74 @@
-.resources {
-  position: fixed;
-  left: 40%;
-  top: 20%;
-  z-index: -1;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+.body {
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+  margin: 50px;
 }
 
-.resource {
-  width: 200px;
-  height: 100px;
-  line-height: 90px;
-  text-decoration: none;
-  margin: 10px;
 
-  background-color: #eeeeee;
-  color: #333333;
-
-  border-top: 1px solid #cccccc;
-  border-right: 1px solid #333333;
-  border-bottom: 1px solid #333333;
-  border-left: 1px solid #cccccc;
+.container {
+  /* Layout Properties */
+  display: -webkit-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
-.resource:hover {
-  background-color: #68c3ed !important;
+.card {
+  width: 280px;
+  display: block;
+  margin: 60px auto;
+  box-shadow: 10px 5px 40px 20px;
+  transition: .25s;
+}
+
+.column {
+  flex-basis: percentage(1/3);
+  width: percentage(1/3);
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+
+.astyle {
+  background: #FFFFFF;
+  margin: 0 0 20px;
+  padding: 20px;
+  border-radius: 2px;
+  box-shadow: 0 2px 6px rgba(#000, 0.2);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.astyle a:hover {
+  box-shadow: 0 4px 12px rgba(#000, 0.2);
+  background-color: red;
+  
+}
+
+.atitle {
+  margin: 0 0 10px;
+  color: #444;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+  }
+
+.aresource {
+  display: inline-block;
+  padding: 8px 10px;
+  margin: 0 0 10px;
+  color: #FFF;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.075rem;
+  text-transform: uppercase;
+}
+
+.atext {
+  color: #666;
+  line-height: 1.5rem;
+  font-size: 0.875rem;
 }
