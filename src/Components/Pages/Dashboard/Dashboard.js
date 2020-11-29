@@ -10,7 +10,7 @@ import { Route } from 'react-router-dom';
 const Dashboard = () => {
 return (
 <html>
-
+<title>Dashboard</title>
 <body>
     {/* Title of the page w/ welcome message to getUsername
     * Time and date at the right hand corner */}
@@ -78,17 +78,23 @@ return (
         <h4> Resources </h4>
         <section className="card3">
         <h1> LibGuides </h1>
+        <a href="http://libguides.lmu.edu/" target="_blank"> 
         <Button> Go </Button>
+        </a>
         </section>
 
         <section className="card3">
         <h1> Degree Works </h1>
+        <a href="https://auth.lmu.edu/mysso/redirect/dw.jsp" target="_blank"> 
         <Button> Go </Button>
+        </a>
         </section>
 
         <section className="card3">
         <h1> Brightspace </h1>
+        <a href="https://brightspace.lmu.edu/d2l/login" target="_blank"> 
         <Button> Go </Button>
+        </a>
         </section>
 
         <section className="card3">
