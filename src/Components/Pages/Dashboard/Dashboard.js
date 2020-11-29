@@ -23,7 +23,7 @@ return (
         {/* Updates Section 
           * ------------------------------------------------------*/}
         <div className="recentUpdates">
-            <h4> Recent Updates </h4>
+            <h4 className = "heading"> Recent Updates </h4>
             <section className="card">
                 <text> Registration date for Spring 2021 has been updated. </text>
             </section>
@@ -35,7 +35,7 @@ return (
         {/* Courses Block Section 
           * ------------------------------------------------------*/}
         <div className="coursePreview">
-            <h4> Courses </h4>
+            <h4 className = "heading"> Courses </h4>
             <section className="cardL + blue">
                 <h6 className="courseTitle"> First-Year Seminar </h6>
                 <a> Preparing For Mars </a>
@@ -72,7 +72,7 @@ return (
      {/* Resources Panels 
        * ------------------------------------------------------*/}
     <div className="resourceSection">
-        <h4> Resources </h4>
+        <h4 className = "heading"> Resources: frequently used </h4>
         <section className="card3">
         <h1> LibGuides </h1>
         <a href="http://libguides.lmu.edu/" target="_blank"> 
