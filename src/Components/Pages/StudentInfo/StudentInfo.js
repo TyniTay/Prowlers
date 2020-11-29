@@ -118,6 +118,9 @@ const StudentInfo = () => {
                     </form>
                     {passwordForm("changePasswordID", "change password", setChangeEntry)}
                     {passwordForm("confirmPasswordID", "confirm password", setConfirmEntry)}
+                    <a href="https://lmutpg.lmu.edu/C20995_tsa/web/login.jsp" target="_blank"> 
+                        <button className="button"> View </button>
+                    </a>
                     <h4 className = {messageType}>{passwordMessage}</h4>
                     {emailAndID("emailAndID disclaimerBelow")}
                     <h6 className="updateDisclaimer" style={{color: '#454545', textIndent: '2px'}}>
