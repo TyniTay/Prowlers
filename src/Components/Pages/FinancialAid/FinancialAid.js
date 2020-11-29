@@ -28,16 +28,16 @@ function docUpload(){
 
 const FinancialAid = props => {
     return(
-        <div className='financePage'>
+        <body className='financePage'>
             Financial Aid
             
-            <body className='yearSelect'>
+            <p className='yearSelect'>
                 Financial Aid Status: {dropDown()}
-            </body>
+            </p>
             
             {docUpload()}
 
-            <section className='award'>
+            <p className='award'>
                 Financial Aid Award:
                 <br/>
                 <br/>
@@ -48,19 +48,19 @@ const FinancialAid = props => {
                 href="https://banner-web.lmu.edu:8080/pls/pbanr/bwskoacc.P_ViewAcct" 
                 target="_blank">View full account numbers -{">"}
                 </a> 
-            </section>
+            </p>
 
-            <section className="standing">
+            <p className="standing">
                 Academic Standing<br/><br/><br/>
                 <p className="entry">Good</p>
-            </section>
+            </p>
 
-            <section className="holds">
+            <p className="holds">
                 Holds<br/><br/><br/>
                 <p className="entry">No Holds at this time</p>
-            </section>
+            </p>
 
-            <section className='payment'>
+            <p className='payment'>
                 Award Payment Schedule
                 <table className="table">
                 <tr> <td> Award   </td> <td> Expected Date </td> <td>      Paid to Date</td> </tr>
@@ -68,9 +68,9 @@ const FinancialAid = props => {
                 <tr> <td> X </td> <td> xx/xx/xx </td> <td>X</td>  </tr> 
                 <tr> <td> X </td> <td> xx/xx/xx </td> <td>X</td>  </tr> 
                 </table> 
-            </section>
-
-        </div>
+            </p>
+        </body>
+        
     )
 }
 
