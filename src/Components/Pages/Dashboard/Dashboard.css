@@ -177,18 +177,19 @@ p.subtext {
 
 
 .bstyle {
-  /* Layout */
+  /* Layout Properties */
+  max-width: 550px;
+  width: 550px;
+  min-height: 100px;
   display: inline-block;
+  margin-bottom: 10px;
   margin-right: 20px;
-  max-height: 200px;
-  max-width: 300px;
-  min-height: 200px;
-  min-width: 300px;
-  position: relative;
+
   /* UI Properties */
-  background-color: #0076a3;
+  background: #0076a3 0% 0% no-repeat padding-box;
   box-shadow: 0px 2px 6px #00000029;
   opacity: 1;
+
   /* Text Properties */
   color: #ffffff;
   text-align: left;
@@ -197,21 +198,27 @@ p.subtext {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  padding: 30px;
 }
 
 .btext {
-  color: white;
-  max-height: 70px;
+  text-align: left;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  line-height: 21px;
+  padding-left: 20px;
 }
 
 .btitle {
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0 0 10px;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: oblique;
+  padding-left: 20px;
+  text-transform: uppercase;
+
 }
 
+/*
 .rButton {
   background-color: #ffffff;
   box-shadow: 0px 2px 6px #12192f3b;
@@ -230,10 +237,11 @@ p.subtext {
   top: 5px;
 }
 
-.button:hover {
+.rButton:hover {
   background-color: gray;
   color: white;
 }
+*/
 
 /* Paneling Colors for Blocks 
  * -------------------------------------------------------------*/

@@ -76,34 +76,22 @@ return (
        <section className="bstyle">
            <h2 className="btitle">OneCard Account</h2>
            <p className="btext">Access to your OneCard balances for meal plans, laundry, and more.</p>
-           <a href="https://lmutpg.lmu.edu/C20995_tsa/web/login.jsp" target="_blank">
-               <button className="rButton"> View </button>
-           </a>
        </section>
 
        <section className="bstyle">
            <h2 className="btitle">Degree Works</h2>
            <p className="btext">Check your Degree Audit and check your gradutation status.</p>
-           <a href="https://lmutpg.lmu.edu/C20995_tsa/web/login.jsp" target="_blank">
-               <button className="rButton"> View </button>
-           </a>
        </section>
 
        <section className="bstyle">
            <h2 className="btitle">Brightspace</h2>
            <p className="btext">Keep up with updates for current courses exams, grades, homework, and more.
            </p>
-           <a href="https://lmutpg.lmu.edu/C20995_tsa/web/login.jsp" target="_blank">
-               <button className="rButton"> View </button>
-           </a>
        </section>
 
        <section className="bstyle">
            <h2 className="btitle">LibGuides</h2>
            <p className="btext">Full list of Databases accessible through the library.</p>
-           <a href="https://lmutpg.lmu.edu/C20995_tsa/web/login.jsp" target="_blank">
-               <button className="rButton"> View </button>
-           </a>
        </section>
    </div>
    </body>

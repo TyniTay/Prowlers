@@ -79,7 +79,7 @@
   bottom: 20px;
 }
 
-.button:hover {
+.viewButton:hover {
   background-color: gray;
   color: white;
 }
