@@ -174,8 +174,6 @@ p.subtext {
   padding-bottom: 20px;
 }
 
-
-
 .bstyle {
   /* Layout Properties */
   max-width: 550px;
@@ -200,6 +198,15 @@ p.subtext {
   line-height: 24px;
 }
 
+.bstyle.button {
+  outline: none;
+  border: none;
+}
+
+.bstyle.button:hover {
+  background-color: lightgrey;
+}
+
 .btext {
   text-align: left;
   font-size: 14px;
@@ -215,36 +222,8 @@ p.subtext {
   font-weight: oblique;
   padding-left: 20px;
   text-transform: uppercase;
-
 }
 
-/*
-.rButton {
-  background-color: #ffffff;
-  box-shadow: 0px 2px 6px #12192f3b;
-  border: none;
-  color: #1a1a1a;
-  text-align: center;
-  text-decoration: none;
-  font-size: 14px;
-  border-radius: 2px;
-  padding: 10px 24px;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  top: 5px;
-}
-
-.rButton:hover {
-  background-color: gray;
-  color: white;
-}
-*/
-
-/* Paneling Colors for Blocks 
- * -------------------------------------------------------------*/
 .blue {
   background: #63baf5;
 }

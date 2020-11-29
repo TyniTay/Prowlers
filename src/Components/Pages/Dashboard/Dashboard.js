@@ -72,27 +72,35 @@ return (
    * ------------------------------------------------------*/}
    <div className="resourceSection">
        <h4 className="heading"> Resources: Recently Used </h4>
+        
+        <a href="https://lmutpg.lmu.edu/C20995_tsa/web/login.jsp" target="_blank">
+            <button className="bstyle button">
+                <h2 className="btitle">OneCard Account</h2>
+                <p className="btext">Access to your OneCard balances for meal plans, laundry, and more.</p>
+            </button>
+        </a>
        
-       <section className="bstyle">
-           <h2 className="btitle">OneCard Account</h2>
-           <p className="btext">Access to your OneCard balances for meal plans, laundry, and more.</p>
-       </section>
+       <a href="https://lmutpg.lmu.edu/C20995_tsa/web/login.jsp" target="_blank">
+            <button className="bstyle button">
+                <h2 className="btitle">Degree Works</h2>
+                <p className="btext">Check your Degree Audit and check your gradutation status.</p>
+            </button>
+        </a>
 
-       <section className="bstyle">
-           <h2 className="btitle">Degree Works</h2>
-           <p className="btext">Check your Degree Audit and check your gradutation status.</p>
-       </section>
+        <a href="https://lmutpg.lmu.edu/C20995_tsa/web/login.jsp" target="_blank">
+            <button className="bstyle button">
+                <h2 className="btitle">Brightspace</h2>
+                <p className="btext">Keep up with updates for current courses exams, grades, homework, and more.
+                </p>
+            </button>
+       </a>
 
-       <section className="bstyle">
-           <h2 className="btitle">Brightspace</h2>
-           <p className="btext">Keep up with updates for current courses exams, grades, homework, and more.
-           </p>
-       </section>
-
-       <section className="bstyle">
-           <h2 className="btitle">LibGuides</h2>
-           <p className="btext">Full list of Databases accessible through the library.</p>
-       </section>
+       <a href="https://lmutpg.lmu.edu/C20995_tsa/web/login.jsp" target="_blank">
+            <button className="bstyle button">
+                <h2 className="btitle">LibGuides</h2>
+                <p className="btext">Full list of Databases accessible through the library.</p>
+            </button>
+        </a>
    </div>
    </body>
 
