@@ -93,11 +93,15 @@ return (
 
         <section className="card3">
         <h1> Student Account Center </h1>
+        <a href="https://lmutpg.lmu.edu/C20995_tsa/web/login.jsp" target="_blank"> 
         <Button> Go </Button>
+        </a>
+       
         </section>
     </div>
 
-       
+
+
 </body>
 
 </html>
