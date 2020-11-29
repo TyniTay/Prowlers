@@ -21,8 +21,8 @@ function Navbar() {
                     return (
                         <li key={index} className={item.cName}>
                             <NavLink exact activeClassName="activeNavLink" className = "navLink" to={item.path}>
-                                {item.icon}
-                                <span>{item.title}</span>
+                                <div className = "icon">{item.icon}</div>
+                                <span className = "title">{item.title}</span>
                             </NavLink>
                         </li>
                     )

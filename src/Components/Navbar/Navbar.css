@@ -47,7 +47,6 @@
 } */
 
 .nav-text {
-  display: flex;
   justify-content: start;
   align-items: center;
   list-style: none;
@@ -58,8 +57,12 @@
   width: 100%;
 }
 
-span {
+.title {
   margin-left: 16px;
+}
+
+icon {
+  flex-shrink: 0;
 }
 
 /* s img {
