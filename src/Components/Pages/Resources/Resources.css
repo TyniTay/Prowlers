@@ -27,19 +27,13 @@
 .astyle {
   background: #FFFFFF;
   margin: 10px;
-  padding: 20px;
+  padding: 0 20px;
   border-radius: 2px;
   box-shadow: 0 2px 6px rgba(#000, 0.2);
-  cursor: pointer;
-  transition: 0.3s ease;
   min-width: 250px;
+  max-width: 250px;
   min-height: 200px;
-}
-
-.astyle a:hover {
-  box-shadow: 0 4px 12px rgba(#000, 0.2);
-  background-color: red;
-  
+  max-height: 200px;
 }
 
 .atitle {
@@ -65,4 +59,26 @@
   color: #666;
   line-height: 1.5rem;
   font-size: 0.875rem;
+}
+
+.button {
+/* Layout Properties*/
+  position: relative;
+  align-content: center;
+  top: 20px;
+  left: 55px;
+  width: 80px;
+  height: 30px;
+  /* UI Properties */
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-align: center;
+  background:#B8B8B8 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  opacity: 1;
+  cursor: pointer;
 }
