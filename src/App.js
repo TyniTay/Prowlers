@@ -18,8 +18,8 @@ function App() {
     <Router>
       <Navbar />
       <Switch>
-        <Route path='/' exact component={StudentInfo} />
-        <Route path='/dashboard' exact component={Dashboard} />
+        <Route path='/' exact component={Dashboard} />
+        <Route path='/dashboard' exact component={StudentInfo} />
         <Route path='/registration' exact component={Registration} />
         <Route path='/records' exact component={Records} />
         <Route path='/financial aid' exact component={FinancialAid} />
