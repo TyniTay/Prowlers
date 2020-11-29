@@ -34,11 +34,8 @@ const StudentInfo = () => {
 
     const handleConfirmInfo = () => {
         if (name === "") {
-            console.log("GET USERNAME: "+getUsername())
             setName(getUsername())
-            console.log("NAME: "+name)
-        }
-        if (changeEntry === confirmEntry) {
+        } else if (changeEntry === confirmEntry) {
             setUpdatingInfo(false)
             setUsername(name)
             setChangeEntry("")

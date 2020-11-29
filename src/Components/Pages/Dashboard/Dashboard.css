@@ -179,7 +179,6 @@ p.subtext {
   display: -webkit-flex;
   flex-direction: row;
   justify-content: space-between;
-
 }
 
 .bstyle {
@@ -234,7 +233,6 @@ p.subtext {
   background-color: gray;
   color: white;
 }
-
 
 /* Paneling Colors for Blocks 
  * -------------------------------------------------------------*/
