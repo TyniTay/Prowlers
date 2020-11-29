@@ -78,17 +78,23 @@ return (
         <h4> Resources </h4>
         <section className="card3">
         <h1> LibGuides </h1>
+        <a href="https://libguides.lmu.edu/" target="_blank"> 
         <Button> Go </Button>
+        </a>
         </section>
 
         <section className="card3">
         <h1> Degree Works </h1>
+        <a href="https://dw.lmu.edu/login/" target="_blank"> 
         <Button> Go </Button>
+        </a>
         </section>
 
         <section className="card3">
         <h1> Brightspace </h1>
+        <a href="https://brightspace.lmu.edu/d2l/home" target="_blank"> 
         <Button> Go </Button>
+        </a>
         </section>
 
         <section className="card3">
