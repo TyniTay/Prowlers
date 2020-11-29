@@ -15,7 +15,7 @@ div.welcomeMessage h1 {
   line-height: 48px;
 }
 
-div.welcomeMessage h2 {
+div.welcomeMessage h1 {
   /* Layout Properties */
   padding-left: 5%;
   padding-top: 30px;
@@ -28,14 +28,10 @@ div.welcomeMessage h2 {
   line-height: 36px;
 }
 
-div.welcomeMessage h2 {
-  position: relative;
-  top: 55px;
-}
 
 div.welcomeMessage h1 {
   position: relative;
-  top: 55px;
+  top: 65px;
   margin-bottom: 50px;
 }
 
