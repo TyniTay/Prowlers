@@ -10,10 +10,8 @@ const defaultOption=schoolYears[0];
 
 function dropDown(){
     return(
-        <h2 className='dropDown'>
         <Dropdown options={schoolYears} onChange={schoolYears._onSelect} value={defaultOption} 
-            placeholder="Select an option" />
-    </h2>
+            placeholder="Select an option" className='dropDown'/>
     )
 }
 
