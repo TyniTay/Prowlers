@@ -13,6 +13,11 @@
   overflow-y: scroll;
 }
 
+.financialAid {
+  padding: 100px;
+  background-color: red;
+}
+
 .body {
   overflow-y: scroll;
 }

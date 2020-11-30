@@ -1,0 +1,34 @@
+{
+    "PHIL 1800-01" : {
+        "name" : "Philosophical Inquiry",
+        "professor": "Darth Vader",
+        "title" : "PHIL 1800-01",
+        "days" : "MWF",
+        "start" : 9,
+        "end" : 10
+    },
+    "PHIL 1800-02" : {
+        "name" : "Philosophical Inquiry",
+        "professor": "Darth Vader",
+        "title" : "PHIL 1800-02",
+        "days" : "MWF",
+        "start" : 12,
+        "end" : 13
+    },
+    "RHET 1080-01" : {
+        "name": "Rhetorical Arts",
+        "professor": "Curious George",
+        "title" : "RHET 1080-01",
+        "days" : "TT",
+        "start" : 13,
+        "end" : 14
+    },
+    "RHET 1080-02" : {
+        "name": "Rhetorical Arts",
+        "professor": "Curious George",
+        "title" : "RHET 1080-02",
+        "days" : "TT",
+        "start" : 11,
+        "end" : 12
+    }
+}

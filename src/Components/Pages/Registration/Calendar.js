@@ -1,19 +1,31 @@
 import React, {useState, useEffect} from 'react'
 import calendarImg from '../../../Assets/calendar.jpg'
 import CalendarBlock from './CalendarBlock'
+import './Registration.css'
 
 const Calendar = props => {
-    // 723 x 576 pixells
+    // 723 x 576 pixels
     console.log("Calendar: " , props)
     return(
-        <div>
-            {props.userClasses.map(userClass => (
-                <div key={userClass.title} style={{zIndex: -1}}>
-                    <CalendarBlock {...userClass} />
-                </div>
-            ))}
-            <img alt="loading" style={{top:'1000px',position: "absolute"}}src = {calendarImg} ></img>
-            
+        <div className="calendarGrid" style={{height: '576px', width: '723px', backgroundImage: `url(${calendarImg})`}}>
+            {props.userClasses.map(userClass => {
+                if(userClass.days === "MWF") {
+                    
+                    return(
+                        <div className={"time" + userClass.start + " monday"} key={userClass.title}>
+                            <CalendarBlock {...userClass} />
+                        </div>
+                    )
+                } else {
+                    return(
+                        <div className={"time" + userClass.start + " tuesday"}>
+                            <CalendarBlock {...userClass} />
+                        </div>
+                    )
+                }
+                
+                
+            })}
         </div>
     )
 }
@@ -22,5 +34,14 @@ export default Calendar
 
 
 /*
+<img alt="loading" style={{top:'700px',position: "absolute", zIndex: -1}}src = {calendarImg} ></img>
+
+
+
+
+
+
+
+
 
 */

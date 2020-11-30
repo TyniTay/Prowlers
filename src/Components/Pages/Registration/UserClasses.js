@@ -1,15 +1,12 @@
 import React from 'react'
+import './Registration.css'
 
 const UserClasses = props => {
     
     console.log("userCLasses", props)
     return(
-        <div style={{
-            backgroundColor: "lightyellow"
-        }}
-        value = {props}>
+        <div className="individualUser">
             {props.title}: {props.name}, Professor: {props.professor}, Days: {props.days}, Time: {props.start%12}:00
-            
         </div>
     )
 }

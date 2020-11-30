@@ -20,8 +20,8 @@
         "professor": "Andrew Forney",
         "title" : "CMSI 281-01",
         "days" : "TT",
-        "start" : 13,
-        "end" : 14
+        "start" : 9,
+        "end" : 10
     },
     "CMSI 281-02" : {
         "name": "Data Structures",
@@ -60,7 +60,7 @@
         "professor": "Delarem Yazdan Sepas",
         "title" : "CMSI 370-02",
         "days" : "TT",
-        "start" : 9,
-        "end" : 10
+        "start" : 13,
+        "end" : 14
     }
 }
