@@ -80,6 +80,7 @@ const Registration = props => {
 
     return(
         <div className="registration">
+            <h1>Registration</h1>
             <form className="filters" onSubmit={handleFilterSubmit}>
                 <button className="filterButton" type="submit" id="University Core">Unviersity Core</button>
                 <button className="filterButton" type="submit" id="Major Courses">Major Courses</button>
