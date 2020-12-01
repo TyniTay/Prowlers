@@ -14,7 +14,6 @@ const Registration = props => {
     const [availableClasses, setAvailableClasses] = useState(MajorList)
     const [keyClassList, setKeyClassList] = useState(KeyMajorList)
     const [userClasses, setUserClasses] = useState([])
-    const [readyToSort, setReadyToSort] = useState(false)
 
     function addClass(toAdd) {
         return new Promise(function(resolve, reject) {
@@ -57,10 +56,10 @@ const Registration = props => {
 
     function handleFilterSubmit(e) {
         e.preventDefault()
-        if(e.nativeEvent.submitter.id == "University Core") {
+        if(e.nativeEvent.submitter.id === "University Core") {
             setAvailableClasses(CoreList)
             setKeyClassList(KeyCoreList)
-        } else if(e.nativeEvent.submitter.id == "Major Courses") {
+        } else if(e.nativeEvent.submitter.id === "Major Courses") {
             setAvailableClasses(MajorList)
             setKeyClassList(KeyMajorList)
         }
