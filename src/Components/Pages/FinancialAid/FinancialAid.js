@@ -17,21 +17,24 @@ function dropDown(){
 
 function docUpload(){
     return(
+    <p className="secureDocBox">
     <a className = "docUpload" 
         href="https://financialaid.lmu.edu/generalinformation/securedocumentupload/" 
         target="_blank">Secure Document Upload
     </a> 
+    </p>
     )
 }
 
 const FinancialAid = props => {
     return(
-        <body className='financePage'>
-            Financial Aid
+        <div className='financePage'>
+            <h1 className="financialheader">Financial Aid</h1>
             
             <p className='yearSelect'>
-                Financial Aid Status: {dropDown()}
+                Financial Aid Status: 
             </p>
+            {dropDown()}
             
             {docUpload()}
 
@@ -67,8 +70,7 @@ const FinancialAid = props => {
                 <tr> <td> X </td> <td> xx/xx/xx </td> <td>X</td>  </tr> 
                 </table> 
             </p>
-        </body>
-        
+        </div>
     )
 }
 

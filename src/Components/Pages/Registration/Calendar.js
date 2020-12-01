@@ -5,7 +5,6 @@ import './Registration.css'
 
 const Calendar = props => {
     // 723 x 576 pixels
-    console.log("Calendar: " , props)
     return(
         <div className="calendarGrid" style={{height: '576px', width: '723px', backgroundImage: `url(${calendarImg})`}}>
             {props.userClasses.map(userClass => {
@@ -31,17 +30,3 @@ const Calendar = props => {
 }
 
 export default Calendar
-
-
-/*
-<img alt="loading" style={{top:'700px',position: "absolute", zIndex: -1}}src = {calendarImg} ></img>
-
-
-
-
-
-
-
-
-
-*/

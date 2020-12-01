@@ -43,24 +43,16 @@ const Registration = props => {
         addClass(keyClassList[e.nativeEvent.submitter.id])
             .then((result) => {
                 result.sort(function(a,b) {
-                    console.log("test cum guzzlers: ", a.start < b.start)
                     return a.start - b.start
                 })
-                console.log("LOOK HERE: " , result)
                 setUserClasses([...result])
             })
-        
-
-        //sort the shit
-
-        //removeAvailableClasses(keyClassList[e.nativeEvent.submitter.id].title)
     }
     
 
     function handleDeleteSubmit(e) {
         e.preventDefault()
         removeClass(keyClassList[e.nativeEvent.submitter.id].title)
-        //addAvailableClasses(keyClassList[e.nativeEvent.submitter.id])
     }
 
     function handleFilterSubmit(e) {
@@ -74,10 +66,6 @@ const Registration = props => {
         }
     }
 
-    function compareStartTimes(timeA, timeB) {
-        return timeA.start > timeB.start
-    }
-
     return(
         <div className="registration">
             <h1>Registration</h1>
@@ -86,7 +74,7 @@ const Registration = props => {
                 <button className="filterButton" type="submit" id="Major Courses">Major Courses</button>
             </form>
             
-            <h1>Available Courses</h1>
+            <h1>Available Courses: Computer Science Major</h1>
             <div className="classList">
                 {availableClasses.map(spec => (
                     <form onSubmit={handleAddSubmit} key = {spec.title} className="availableClasses">
@@ -113,14 +101,3 @@ const Registration = props => {
     )
 }
 export default Registration
-
-/*
-<Classes {...spec}/>
-{newButton(spec)}
-
-<div style={{display: 'flex', padding: '10px', justifyContent: 'space-between'}}>
-                        
-                    </div>
-
-
-*/
