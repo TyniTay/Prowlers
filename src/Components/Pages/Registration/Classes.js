@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react'
 import {newButton} from './Registration'
 import './Registration.css'
 const Classes = props => {
-    console.log("CLASSES: ", props.props)
 
     return(
         <div className="individualAvailable">

@@ -13,7 +13,7 @@
 }
 
 .classList {
-    height: 345px;
+    height: 440px;
     border: solid 1px;
     width: 823px;
 }
@@ -129,6 +129,8 @@
     display: inline-flex;
     position: relative;
     left: 20px;
+    width: 100px;
+    background-color: lightblue;
 }
 
 .wednesdayBlock {
@@ -136,7 +138,8 @@
     width: 100;
     position: relative;
     height: 30px;
-    left: 220.2px
+    left: 220.2px;
+    background-color: lightblue;
 }
 
 .fridayBlock {
@@ -145,6 +148,7 @@
     height: 30px;
     position: relative;
     left: 420px;
+    background-color: lightblue;
 }
 
 .tuesdayBlock {
@@ -153,6 +157,7 @@
     position: relative;
     height : 30px;
     left: 20px;
+    background-color: lightblue;
 }
 
 .thursdayBlock {
@@ -161,4 +166,5 @@
     position: relative;
     height: 30px;
     left: 220px;
+    background-color: lightblue;
 }
