@@ -1,4 +1,4 @@
-/* all code copied from Brian Design @https://www.youtube.com/watch?v=CXa0f4-dWi4 */
+/* major help with code from Brian Design @https://www.youtube.com/watch?v=CXa0f4-dWi4 */
 
 import React from 'react'
 import * as RiIcons from "react-icons/ri"

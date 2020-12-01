@@ -1,4 +1,4 @@
-/* all code copied from Brian Design @https://www.youtube.com/watch?v=CXa0f4-dWi4 */
+/* major help with code from Brian Design @https://www.youtube.com/watch?v=CXa0f4-dWi4 */
 
 .navbar {
   z-index: 1;
@@ -30,22 +30,6 @@
   background-color: #138eff;
 }
 
-/* .searchbar {
-  margin: 15px;
-} */
-
-/* input[type="text"] {
-  width: 100%;
-  font-size: 16px;
-  background-color: white;
-  border-radius: 25px;
-  padding: 12px 20px 12px 40px;
-} */
-
-/* input:focus {
-  outline-width: 0px;
-} */
-
 .nav-text {
   justify-content: start;
   align-items: center;
@@ -64,7 +48,3 @@
 icon {
   flex-shrink: 0;
 }
-
-/* s img {
-  border-radius: "20%";
-} */
