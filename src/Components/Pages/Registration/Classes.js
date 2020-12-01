@@ -1,5 +1,4 @@
-import React, {useState, useEffect} from 'react'
-import {newButton} from './Registration'
+import React from 'react'
 import './Registration.css'
 const Classes = props => {
 
