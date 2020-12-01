@@ -32,9 +32,9 @@
 .dropDown {
   font-size: 50%;
   color: black;
-  position: relative;
-  top: -40px;
-  left: 350px;
+  position: fixed;
+  top: 75px;
+  left: 550px;
   width: 250px;
 }
 .menu {
@@ -45,7 +45,7 @@
   border-radius: 25px;
   text-decoration: none;
   position: relative;
-  top: 65px;
+  top: 15px;
   left: 1030px;
 }
 .docUpload:link {
