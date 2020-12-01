@@ -1,8 +1,7 @@
 .financePage {
   font-size: 300%;
-  height: 800px;
-  width: 800px;
   z-index: -2000;
+  overflow-x: hidden;
 }
 
 .financialheader {
@@ -27,11 +26,11 @@
   height: 150px;
   width: 830px;
   border-radius: 25px;
+  z-index: -100;
 }
 
 .dropDown {
   font-size: 50%;
-  z-index: 100;
   color: black;
   position: relative;
   top: -40px;
