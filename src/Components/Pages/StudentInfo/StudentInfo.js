@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 import * as RiIcons from "react-icons/ri"
 import { IconContext } from 'react-icons'
 import {getUsername, setUsername} from "../../../Data";
@@ -29,22 +29,18 @@ const StudentInfo = () => {
     const [name, setName] = useState("")
     const [newPassword, setNewPassword] = useState("")
     const [confirmPassword, setConfirmPassword] = useState("")
-
     const [messageType, setMessageType] = useState("none")
     const [passwordMessage, setPasswordMessage] = useState("")
-
-
     const [isDisabled, setIsDisabled] = useState("false")
 
     //outputs newPassword form with given specifications for re-use
-    function passwordForm(idName, placeholder, entryUpdater) {
+    function passwordForm(placeholder, entryUpdater) {
         return(
             <input
-                id = {idName}
                 className = "passwordForm"
                 type = "password"
-                onBlur = {managePasswordFeedback}
-                onChange = {e => (entryUpdater(e.target.value))}
+                onBlur = {managePasswordBlur}
+                onChange = {e => managePasswordEntry(e.target.value, entryUpdater)}
                 placeholder = {placeholder}
                 style={{fontSize: '20px', padding: '0px 5px'}}
                 >
@@ -91,7 +87,7 @@ const StudentInfo = () => {
                 setPasswordMessage("enter password twice")
                 setIsDisabled(true)
             } else {
-                managePasswordFeedback()
+                managePasswordBlur()
             }
         }
         if (document.activeElement.id === "theButton") {
@@ -99,34 +95,58 @@ const StudentInfo = () => {
         }
     }
 
-    const manageNameFeedback = () => {
-        if (document.getElementById("nameID").value !== "" && newPassword === confirmPassword) {
+    const manageNameEntry = (text) => {
+        if (text !== null && text !== undefined) {
+            setName(text)
+        }
+        if (document.getElementById("nameID").value.length >= 3 && newPassword === confirmPassword) {
             setIsDisabled(false)
         } else {
             setIsDisabled(true)
         }
     }
 
-    const managePasswordFeedback = (e) => {
-        if(newPassword !== "" && confirmPassword !== "") {
-            if(newPassword === confirmPassword) {
+     const managePasswordEntry = (text, entryUpdater) => {
+        if (text !== null) {
+            entryUpdater(text)
+        }
+        let otherValue = confirmPassword
+        if (entryUpdater === setConfirmPassword) {
+            otherValue = newPassword
+        } 
+
+        if (text !== "" && otherValue !== "") {
+             if(text === otherValue) {
+                setPasswordMessage("valid password")
                 setMessageType("confirmation")
-                setPasswordMessage("valid newPassword")
                 setIsDisabled(false)
-            } else {
+             } else {
+                setPasswordMessage("")
+                setIsDisabled(true)
+             }
+             } else {
+                setPasswordMessage("")
+                setIsDisabled(true)
+            }
+        }
+
+
+    const managePasswordBlur = (e) => {
+        if(newPassword !== "" && confirmPassword !== "") {
+            if(!(newPassword === confirmPassword)) {
                 setMessageType("alert")
                 setPasswordMessage("passwords do not match")
                 setIsDisabled(true)
             }
         } else if (newPassword === "" && confirmPassword === "") {
             setPasswordMessage("")
-            manageNameFeedback()
+            manageNameEntry()
         } else if (passwordMessage !== "enter password twice") {
             setPasswordMessage("")
             setIsDisabled(true)
         }
     }
-    
+
     //End of helper function section
 
     if (updatingInfo) { 
@@ -138,19 +158,17 @@ const StudentInfo = () => {
                         onSubmit={attemptSubmit}>
                         <div className ="studentName">
                             <input
-
                                 id = "nameID"
                                 type = "text"
-                                onBlur = {manageNameFeedback}
                                 placeholder={getUsername()}
-                                onChange = {e => setName(e.target.value)}
+                                onChange = {e => manageNameEntry(e.target.value)}
                                 style={{fontSize: '20px', padding: '0px 5px'}}
                                 >
                             </input>
                             {legalName()}
                         </div>
-                        {passwordForm("passwordID", "change password", setNewPassword)}
-                        {passwordForm("confirmPasswordID", "confirm password", setConfirmPassword)}
+                        {passwordForm("change password", setNewPassword)}
+                        {passwordForm("confirm password", setConfirmPassword)}
                         
                         <h4 className = {messageType}>{passwordMessage}</h4>
 
