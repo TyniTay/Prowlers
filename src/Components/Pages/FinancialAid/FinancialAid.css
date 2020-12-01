@@ -1,34 +1,31 @@
 .financePage {
-  color: darkgray;
   font-size: 300%;
-  position: fixed;
-  top: 100px;
-  left: 35px;
   height: 800px;
   width: 1250px;
-  margin: 250px, 250px;
-  overflow-y: scroll;
+  z-index: -2000;
 }
 
-.financialAid {
-  padding: 100px;
-  background-color: red;
-}
-
-.body {
-  overflow-y: scroll;
+.financialheader {
+  color: #3e2e2e;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 36px;
+  position: relative;
+  top: 110px;
+  left: 190px;
 }
 
 .yearSelect {
   background-color: royalblue;
   color: white;
-  position: fixed;
+  position: relative;
   font-size: 75%;
   left: 190px;
   top: 180px;
   padding: 45px 15px;
   height: 150px;
-  width: 800px;
+  width: 830px;
   border-radius: 25px;
 }
 
@@ -36,7 +33,7 @@
   font-size: 50%;
   z-index: 100;
   color: black;
-  position: absolute;
+  position: relative;
   top: -40px;
   left: 350px;
   width: 250px;
@@ -45,6 +42,13 @@
   z-index: 100;
 }
 
+.secureDocBox {
+  border-radius: 25px;
+  text-decoration: none;
+  position: relative;
+  top: 65px;
+  left: 1030px;
+}
 .docUpload:link {
   font-size: 40%;
   z-index: -1000;
@@ -55,11 +59,6 @@
   background-color: lightgray;
   border-radius: 25px;
   text-decoration: none;
-  position: fixed;
-  height: 150px;
-  width: 260px;
-  top: 180px;
-  left: 1000px;
 }
 .docUpload:visited {
   z-index: -1000;
@@ -77,8 +76,8 @@
 
 .award {
   z-index: -1000;
-  position: fixed;
-  top: 340px;
+  position: relative;
+  top: 150px;
   left: 190px;
   background-color: lightgray;
   color: black;
@@ -106,8 +105,8 @@
 
 .standing {
   z-index: -1000;
-  position: fixed;
-  top: 340px;
+  position: relative;
+  top: -100px;
   left: 550px;
   background-color: lightgray;
   color: black;
@@ -121,8 +120,8 @@
 
 .holds {
   z-index: -1000;
-  position: fixed;
-  top: 340px;
+  position: relative;
+  top: -350px;
   left: 910px;
   background-color: lightgray;
   color: black;
@@ -136,8 +135,8 @@
 
 .payment {
   z-index: -1000;
-  position: fixed;
-  top: 600px;
+  position: relative;
+  top: -310px;
   left: 190px;
   background-color: lightgray;
   color: black;
