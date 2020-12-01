@@ -1,7 +1,7 @@
 .financePage {
   font-size: 300%;
   height: 800px;
-  width: 1250px;
+  width: 800px;
   z-index: -2000;
 }
 
@@ -71,7 +71,6 @@
   font-size: 120%;
   font-weight: bold;
   color: black;
-  margin: auto;
 }
 
 .award {
