@@ -1,9 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './FinancialAid.css'
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
-import { RiBarcodeBoxFill } from 'react-icons/ri';
 
 const schoolYears=["2020-2021","2019-2020","2018-2019","2017-2018","2016-2017","2015-2016","2014-2015"]
 const defaultOption=schoolYears[0];
@@ -20,7 +18,7 @@ function docUpload(){
     <p className="secureDocBox">
     <a className = "docUpload" 
         href="https://financialaid.lmu.edu/generalinformation/securedocumentupload/" 
-        target="_blank">Secure Document Upload
+        target="_blank" rel="noopener noreferrer">Secure Document Upload
     </a> 
     </p>
     )
@@ -47,7 +45,7 @@ const FinancialAid = props => {
                 <br/>
                 <a className = "fullaccount" 
                 href="https://banner-web.lmu.edu:8080/pls/pbanr/bwskoacc.P_ViewAcct" 
-                target="_blank">View full account numbers -{">"}
+                target="_blank" rel="noopener noreferrer">View full account numbers -{">"}
                 </a> 
             </p>
 
