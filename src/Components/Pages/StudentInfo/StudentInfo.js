@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react"
+import React, {useState} from "react"
 import * as RiIcons from "react-icons/ri"
 import { IconContext } from 'react-icons'
 import {getUsername, setUsername} from "../../../Data";
