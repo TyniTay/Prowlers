@@ -66,7 +66,7 @@ const StudentInfo = () => {
         if (newPassword !== "" && confirmPassword === "") {
             return true;
         } else {
-            return (confirmPassword !== "" && newPassword == "");
+            return (confirmPassword !== "" && newPassword === "");
         }
     }
 
