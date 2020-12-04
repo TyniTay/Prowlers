@@ -73,10 +73,9 @@ const StudentInfo = () => {
     const attemptSubmit = (e) => {
         e.preventDefault()
     
-        if (newPassword === confirmPassword) {
+        if (newPassword === confirmPassword && (name.length > 2 || name.length === 0)) {
             setUpdatingInfo(false)
-
-            if (name.length > 1) {
+            if (name.length > 2) {
                 setUsername(name)
             }
             setNewPassword("")
@@ -124,7 +123,9 @@ const StudentInfo = () => {
              if(text === otherValue) {
                 setPasswordMessage("valid password")
                 setMessageType("confirmation")
-                setIsDisabled(false)
+                if (name.length > 2 || name.length === 0) {
+                    setIsDisabled(false)
+                }
              } else {
                 setPasswordMessage("")
                 setIsDisabled(true)
