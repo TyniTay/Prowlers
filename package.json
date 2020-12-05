@@ -15,7 +15,7 @@
     "react-icons": "^4.1.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.4",
-    "homepage": "http://aidan242.github.io/Prowlers"
+    "homepage": "http://aidan242.github.io/Prowlers/"
   },
   "scripts": {
     "start": "react-scripts start",
