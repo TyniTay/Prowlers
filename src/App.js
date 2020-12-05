@@ -1,6 +1,5 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import './App.css';
-import logo from './lmu.png';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Navbar from './Components/Navbar/Navbar'
 

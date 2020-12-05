@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import calendarImg from '../../../Assets/calendar.jpg'
 import CalendarBlock from './CalendarBlock'
 import './Registration.css'
